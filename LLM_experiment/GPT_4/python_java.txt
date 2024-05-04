@@ -1,0 +1,133 @@
+static int areaSquare(int side) { int area = side * side; return area; }
+static int fun(int n) { return n & (n - 1); }
+static int intersection(int n) { return n * (n - 1); }
+static int hexagonalNum(int n) { return n * (2 * n - 1); }
+static int cassini(int n) { return (n & 1) != 0 ? -1 : 1; }
+static int addOne(int x) { return -(~x); }
+static void mergeTwoHalf(int[] A, int n) { Arrays.sort(A); }
+static double find_Area(double r) { return 2 * r * r; }
+static boolean check(int n) { return 1162261467 % n == 0; }
+static boolean isEven(int n) { return n % 2 == 0; }
+static int pentagonalNum(int n) { return (3 * n * n - n) / 2; }
+static double circumference(double r) { return 2 * Math.PI * r; }
+static int numberOfSticks(int x) { return (3 * x * (x + 1)) / 2; }
+static int binomialCoeffSum(int n) { return (1 << n); }
+static int largest(int[] arr) { return java.util.Arrays.stream(arr).max().getAsInt(); }
+static double Circumference(double a) { return 4 * a; }
+static int rangeGCD(int n, int m) { return n == m ? n : 1; }
+int power(int n) { if (n == 1) return 2; return 2 * power(n - 1); }
+static int compute_average(int a, int b) { return (a + b) / 2; }
+static double summingSeries(int n) { return Math.pow(n, 2); }
+static double multiplyWith3Point5(int x) { return (x << 1) + x + (x >> 1); }
+static boolean isEven(int n) { return (n & 1) == 0; }
+static int factorial(int n) { return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); }
+static double slope(int x1, int y1, int x2, int y2) { return (double) (y2 - y1) / (x2 - x1); }
+static int getModulo(int n, int d) { return n & (d - 1); }
+static boolean oppositeSigns(int x, int y) { return (x ^ y) < 0; }
+static int height(int N) { return (int) Math.ceil(Math.log(N + 1) / Math.log(2)) - 1; }
+static int swapNibbles(int x) { return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); }
+static int factorial(int n) { return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); }
+static int countNonEmptySubstr(String str) { int n = str.length(); return (int) (n * (n + 1) / 2); }
+static int nthTerm(int n) { return (n * n) + (n * n * n); }
+static int getRemainder(int num, int divisor) { return num % divisor; }
+static int findMaximumPieces(int n) { return (int) (1 + n * (n + 1) / 2); }
+static int maximum; static int lis(int[] arr) { n = arr.length; maximum = 1; _lis(arr, n); return maximum; }
+static int gcd(int a, int b) { if (a == 0) return b; return gcd(b % a, a); }
+static int rectCount(int n, int m) { return (m * n * (n + 1) * (m + 1)) / 4; }
+static int evenbinomialCoeffSum(int n) { return 1 << (n - 1); }
+static int count_of_ways(int n) { int count = 0; count = (n + 1) * (n + 2) / 2; return count; }
+static boolean isMultipleOf10(int n) { return n % 15 == 0; }
+static double areaOctagon(double side) { return 2 * (1 + Math.sqrt(2)) * side * side; }
+static double findSum(int n) { return n * (n + 1) * (n + 2) * (3 * n + 1) / 24; }
+static String reverse(String string) { string = new StringBuilder(string).reverse().toString(); return string; }
+static void sortit(int[] arr, int n) { for (int i = 0; i < n; i++) arr[i] = i + 1; }
+static int factorial(int n) { return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); }
+static double surfaceAreaOctahedron(double side) { return 2 * (Math.sqrt(3)) * (side * side); }
+static int Resources(int process, int need) { int minResources = 0; minResources = process * (need - 1) + 1; return minResources; }
+static double volumeOfEllipsoid(double r1, double r2, double r3) { return 1.33 * Math.PI * r1 * r2 * r3; }
+static double procal(int n) { return (3.0 * n) / (4.0 * (n * n) - 1); }
+static double vol_of_octahedron(double side) { return (side * side * side) * (Math.sqrt(2) / 3); }
+static int countSetBits(int n) { int count = 0; while (n != 0) { n &= (n - 1); count++; } return count; }
+static int calculateSum(int n) { int sum = 0; sum = (1 << n); return (sum - 1); }
+static boolean isPowerOfTwo(int x) { return (x != 0 && (x & (x - 1)) == 0); }
+static Object assignValue(Object a, Object b, int x) { Object[] arr = {a, b}; return arr[x]; }
+static int kthSmallest(int[] arr, int n, int k) { Arrays.sort(arr); return arr[k - 1]; }
+static int maximum; static int lis(int[] arr) { maximum = 1; int n = arr.length; _lis(arr, n); return maximum; }
+static double sumOfSeries(int n) { return 0.666 * (1 - 1 / Math.pow(10, n)); }
+static int countSetBits(int n) { if (n == 0) return 0; else return 1 + countSetBits(n & (n - 1)); }
+static String repeat(String s, int n) { String s1 = s; for(int i = 1; i < n; i++) { s += s1; } return s; }
+static int countSetBits(int n) { if (n == 0) return 0; else return (n & 1) + countSetBits(n >> 1); }
+static void bin(int n) { if (n > 1) bin(n >> 1); System.out.print(n & 1 + " "); }
+static void printSubStr(String st, int low, int high) { System.out.print(st.substring(low, high + 1)); System.out.flush(); }
+static int getAbs(int n) { int mask = n >> (Integer.SIZE - 1); return (n + mask) ^ mask; }
+static int maxSquare(int b, int m) { return (b / m - 1) * (b / m) / 2; }
+static double getArea(double a) { return (Math.PI * a * a) / 4; }
+static int minSum(int[] A) { int min_val = Arrays.stream(A).min().getAsInt(); return min_val * (A.length - 1); }
+static int countStr(int n) { return 1 + (n * 2) + (n * ((n * n) - 1) / 2); }
+static int turnOffK(int n, int k) { if (k <= 0) return n; return n & ~(1 << (k - 1)); }
+static int yMod(int y, int x) { return y % (1 << x); }
+static int search(int[] arr, int n, int x) { for (int i = 0; i < n; i++) { if (arr[i] == x) { return i; } } return -1; }
+static int fib(int n) { if (n <= 1) return n; return fib(n - 1) + fib(n - 2); }
+static int maxTripletSum(int[] arr, int n) { Arrays.sort(arr); return arr[n-1] + arr[n-2] + arr[n-3]; }
+static boolean isNumber(String s) { for (int i = 0; i < s.length(); i++) { if (!Character.isDigit(s.charAt(i))) return false; } return true; }
+static int divisorSum(int n) { int sum = 0; for (int i = 1; i <= n; i++) { sum += (n / i) * i; } return sum; }
+static int addOne(int x) { int m = 1; while ((x & m) != 0) { x = x ^ m; m <<= 1; } x = x ^ m; return x; }
+static int findRepeating(int[] arr, int n) { return sum(arr) - (((n - 1) * n) / 2); }
+static int findSum(int N, int K) { int ans = 0; for (int i = 1; i <= N; i++) { ans += (i % K); } return ans; }
+static boolean isPrime(int n) { if (n <= 1) return false; for (int i = 2; i < n; i++) { if (n % i == 0) return false; } return true; }
+static boolean isPossible(String str, int n) { int l = str.length(); if (l >= n) return true; return false; }
+static int getOddOccurrence(int[] arr) { int res = 0; for (int element : arr) { res ^= element; } return res; }
+static double findArea(double a) { return (Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * a * a) / 4; }
+static void printArray(int[] a) { for(int i : a) { System.out.print(i + " ▁ "); } System.out.println(); }
+static String evenlength(String n) { String res = n; for (int j = n.length() - 1; j >= 0; j--) { res += n.charAt(j); } return res; }
+static int sequence(int n) { if (n == 1 || n == 2) return 1; else return sequence(sequence(n - 1)) + sequence(n - sequence(n - 1)); }
+static int nextPowerOf2(int n) { int p = 1; if (n != 0 && (n & (n - 1)) == 0) return n; while (p < n) p <<= 1; return p; }
+static boolean isPowerOfFour(int n) { return n != 0 && ((n & (n - 1)) == 0) && (n & 0xAAAAAAAA) == 0; }
+static int nswp(int n) { if (n == 0 || n == 1) return 1; return 2 * nswp(n - 1) + nswp(n - 2); }
+static int findTrailingZeros(int n) { int count = 0; int i = 5; while (n / i >= 1) { count += n / i; i *= 5; } return count; }
+static int find(int n, int k) { if (n + 1 >= k) return k - 1; else return 2 * n + 1 - k; }
+static int leonardo(int n) { if (n == 0 || n == 1) return 1; return leonardo(n - 1) + leonardo(n - 2) + 1; }
+static int CountSquares(int a, int b) { return (int)(Math.floor(Math.sqrt(b)) - Math.ceil(Math.sqrt(a)) + 1); }
+static int countPaths(int n, int m) { if (n == 0 || m == 0) return 1; return countPaths(n - 1, m) + countPaths(n, m - 1); }
+static int nextPowerOf2(int n) { n -= 1; n |= n >> 1; n |= n >> 2; n |= n >> 4; n |= n >> 8; n |= n >> 16; n += 1; return n; }
+static double volOfDodecahedron(double side) { return ((15 + (7 * Math.sqrt(5))) / 4) * Math.pow(side, 3); }
+static int largestPower(int n, int p) { int x = 0; while (n > 0) { n /= p; x += n; } return x; }
+static boolean checkValidity(int a, int b, int c) { if (a + b <= c || a + c <= b || b + c <= a) return false; else return true; }
+static int PowerOFPINnfactorial(int n, int p) { int ans = 0; int temp = p; while (temp <= n) { ans += n / temp; temp *= p; } return (int) ans; }
+static int findExtraElementIndex(int[] arrA, int[] arrB) { int extraElement = Arrays.stream(arrA).sum() - Arrays.stream(arrB).sum(); for (int i = 0; i < arrA.length; i++) { if (arrA[i] == extraElement) return i; } return -1; }
+static int getMissingNo(int[] A) { int n = A.length; int total = (n + 1) * (n + 2) / 2; int sum_of_A = 0; for (int num : A) { sum_of_A += num; } return total - sum_of_A; }
+static int findLastIndex(String str, char x) { int index = -1; for (int i = 0; i < str.length(); i++) { if (str.charAt(i) == x) { index = i; } } return index; }
+static int findLastIndex(String str, char x) { for (int i = str.length() - 1; i >= 0; i--) { if (str.charAt(i) == x) { return i; } } return -1; }
+static int getMissingNo(int[] a, int n) { int i, total = 1; for (i = 2; i <= n + 2; i++) { total += i; total -= a[i - 2]; } return total; }
+static int cost(int[] a, int n) { return (n - 1) * Arrays.stream(a).min().getAsInt(); }
+static int largest(int[] arr, int n) { int max = arr[0]; for (int i = 1; i < n; i++) { if (arr[i] > max) { max = arr[i]; } } return max; }
+static void printNos(int n) { if (n > 0) { printNos(n - 1); System.out.print(n + " ▁ "); } }
+static int numberOfPaths(int m, int n) { if (m == 1 || n == 1) return 1; return numberOfPaths(m - 1, n) + numberOfPaths(m, n - 1); }
+static int maxvolume(int s) { int length = s / 3; s -= length; int breadth = s / 2; int height = s - breadth; return length * breadth * height; }
+static void findLarger(int[] arr, int n) { java.util.Arrays.sort(arr); for(int i = n / 2; i < n; i++) System.out.println(arr[i]); }
+static int playGame(int[] arr, int n) { HashSet<Integer> s = new HashSet<>(); for (int i = 0; i < n; i++) s.add(arr[i]); return s.size() % 2 == 0 ? 1 : 2; }
+static void leftRotate(int[] arr, int n, int k) { for (int i = k; i < k + n; i++) System.out.print(arr[i % n] + " ▁ "); }
+static int horner(int[] poly, int n, int x) { int result = poly[0]; for (int i = 1; i < n; i++) { result = result * x + poly[i]; } return result; }
+static int findSum(int n) { int sm = 0; for (int i = 1; i <= n; i++) { for (int j = i; j <= n; j++) { sm += i * j; } } return sm; }
+static int doublefactorial(int n) { int res = 1; for (int i = n; i >= 0; i -= 2) { if (i == 0 || i == 1) return res; else res *= i; } return res; }
+void printFun(int test) { if (test < 1) return; else { System.out.print(test + " ▁ "); printFun(test - 1); System.out.print(test + " ▁ "); } }
+static void exponential(int n, double x) { double sum = 1.0; for (int i = n; i > 0; i--) { sum = 1 + x * sum / i; } System.out.println("e^x = " + sum); }
+static double squareRoot(int n) { double x = n; double y = 1; double e = 0.000001; while (Math.abs(x - y) > e) { x = (x + y) / 2; y = n / x; } return x; }
+static void printFactorialNums(int n) { int fact = 1; int x = 2; while (fact <= n) { System.out.print(fact + " ▁ "); fact = fact * x; x++; } }
+static boolean divisibleBy20(String num) { int lastTwoDigits = Integer.parseInt(num.substring(num.length() - 2)); return lastTwoDigits % 20 == 0; }
+static int floorSqrt(int x) { if (x == 0 || x == 1) return x; int i = 1, result = 1; while (result <= x) { i++; result = i * i; } return i - 1; }
+static int search(int[] arr, int x) { for (int j = 0; j < arr.length; j++) { if (x == arr[j]) { return j; } } return -1; }
+static int modInverse(int a, int m) { a = a % m; for (int x = 1; x < m; x++) { if ((a * x) % m == 1) return x; } return 1; }
+static int count(String s, char c) { int res = 0; for(int i = 0; i < s.length(); i++) { if(s.charAt(i) == c) res++; } return res; }
+static int sumOfSeries(int n) { int sum = 0; for (int i = 1; i <= n; i++) { sum += (2 * i - 1) * (2 * i - 1); } return sum; }
+static int nextPowerOf2(int n) { int count = 0; if ((n != 0) && ((n & (n - 1)) == 0)) return n; while (n != 0) { n >>= 1; count++; } return (1 << count); }
+static boolean isPower(int x, int y) { if (x == 1) return (y == 1); int pow = 1; while (pow < y) pow = pow * x; return (pow == y); }
+static boolean allCharactersSame(String s) { int n = s.length(); for (int i = 1; i < n; i++) { if (s.charAt(i) != s.charAt(0)) return false; } return true; }
+static void center(int x1, int x2, int y1, int y2) { System.out.print((x1 + x2) / 2 + " , " + (y1 + y2) / 2); }
+static int kthgroupsum(int k) { int cur = (k * (k - 1)) + 1; int sum = 0; while (k > 0) { sum += cur; cur += 2; k--; } return sum; }
+static int getSum(int n) { int sum = 0; while (n != 0) { sum += n % 10; n /= 10; } return sum; }
+static int spiralDiaSum(int n) { if (n == 1) return 1; return (4 * n * n - 6 * n + 6 + spiralDiaSum(n - 2)); }
+static boolean isDivisible(int n) { while (n / 100 != 0) { int last_digit = n % 10; n /= 10; n += last_digit * 3; } return n % 29 == 0; }
+static int countOccurrences(int[] arr, int n, int x) { int res = 0; for (int i = 0; i < n; i++) { if (x == arr[i]) res++; } return res; }
+static int Right_most_setbit(int num) { int pos = 1; for(int i = 0; i < 32; i++) { if((num & (1 << i)) == 0) pos++; else break; } return pos; }
+static int nextPowerOf2(int n) { int p = 1; if (n != 0 && (n & (n - 1)) == 0) return n; while (p < n) p <<= 1; return p; }

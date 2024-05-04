@@ -1,0 +1,328 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def evenbinomialCoeffSum(n): return (1 << (n - 1
+def _lis( arr, n, max ): max[0] = arr[0] ; prev = arr[0] ; for i in range( 1, n ): if arr[i] > prev: max[0] = max( max[0], i + 1 ) ; prev = arr[i] ; _lis( arr[ : i + 1 ], i,
+def area_octagon( side ): return 2 * ( 1 + sqrt( 2.0 ) ) * side * side NEWLINEHere's the one-liner Python code equivalent to the given C++ function definition.
+def surface_area_octahedron( side ): return 2 * ( math.sqrt( 3 ) ) * ( side * side ) NEWLINEDEDENT```python# Import math module for sqrt functionimport math```
+def sortit ( arr , n ):for i in range ( n ): arr [ i ] = i + 1NEWLINE# Python does not have a built-in function to sort an array like C++ does.# If you want to sort the array, use the built-in sort function:# INDENT# arr.sort ( )# DEDENT# NEWLINE
+def findSum( n ): return ( n * ( n + 1 ) * ( n + 2 ) * ( 3 * n + 1 ) ) // 24 NEWLINEDEDENT```pythonKeep in mind that the given C++ code is a simple mathematical calculation and might not be representative of more complex C++ code. The Python code provided above is equivalent to the C++ code in terms of functionality.
+def vol_of_octahedron ( side ): NEWLINE return ( ( side * side * side ) * ( ( 1.4142135625 ) / 3 ) ) DEDENT```This is a one-line Python function equivalent to the given C++ function. Note that due to the limitations of this text-based format, the Python code may not be perfectly formatted. In a
+def Resources ( process , need ): return process * ( need - 1 ) + 1 NEWLINE# Or in one line:def Resources ( process , need ): return process * ( need - 1 ) + 1
+def procal( n ): return 3.0 * n / ( 4.0 * ( n * n ) - 1 ) NEWLINE```pythonDEDENT # End of function definition.
+def cost(a, n): return (n-1) * min(a)[0] NEWLINE# Or with list comprehension:def cost(a, n): return (n-1) * min([x for x in a]) NEWLINE
+def is_power_of_two(x): return x and not (x & (x - 1)) INDENT# rest of the code goes hereDEDENT # end of function definitionNEWLINE
+def factorial ( n : int ) : return ( ( 1 : int ) * ( ( 2 : int ) ** ( n - 1 : int ) ) ) if n > 1 else 1 ; NEWLINE# Python does not support unsigned integers directly, so the function signature and return type will be different from the C++ version.
+def findRepeating ( arr, n ): return sum ( arr[:n] ) - ( ( n - 1 ) * n // 2 ) # NEWLINE                                             # INDENT                                             # def sum ( arr ): return sum ( arr ) # DEDENT                                             # NEWLINE# Or using built-in sum functiondef findRepeating ( arr, n ): return sum ( arr[:n]
+def reverse ( str : str ) :\ import len,\ functools\ n = len ( str )\ i = 0\ functools.reduce ( lambda x, y : ( y, x ) , ( str [ : n // 2 ] , str [ n - 1 : ] ) )\ NEWLINE\ str [ : n // 2 ] , str [ n - 1 : ] )
+def assignValue(a, b, x): return arr=[a,b]; return arr[int(x)]# NEWLINEarr=[]# INDENTarr.append(a)# INDENTarr.append(b)# DEDENT# NEWLINE# DEDENT
+def count_set_bits(n): return bin(n.bitwise_and(-n)).count('1') if n else 0 # NEWLINEINDENTdef _count_set_bits_helper(n): return sum(int(bit) for bit in bin(n)[2:]) # NEWLINEDEDENTreturn _count_set_bits_helper if ( 0xFFFFFFFF < n ) else count_set_bits
+def bin ( n ): if n > 1: bin ( n >> 1 ) ; print ( str ( n & 1 ) , end = "" ) NEWLINE DEDENT
+def sum_of_series ( n ): return 0.666 * ( 1 - 1 / pow ( 10 , n ) ) NEWLINE
+def calculateSum(n): return (1 << (n+1)) - 1 # NEWLINE# DEDENT
+def countSetBits ( n ): return bin(n)[2:].count( '1' ) if n else 0 INDENT \def _countSetBits ( n, count ): if n == 0: return count DEDNT \return _countSetBits( n >> 1, count + ( n & 1 ) ) NEWLINE \countSetBits = _countSetBits << 3 # Python shift-left operator.
+def countSetBits ( n ): return 1 + ( countSetBits ( n & ( n - 1 ) ) ) if n else 0 # NEWLINE# DEDENT
+def kthSmallest(arr, n, k):= { arr.sort() ; print(arr[k-1]) ; }NEWLINE# This is a one-liner in the sense of a REPL response, but it's not a valid Python script due to the print statement. To make it a valid Python script, you should replace the print statement with a return statement:def kthSmallest(arr, n, k):
+def _lis( arr, n, max ): max[0] = arr[0] ; prev = arr[0] ; for i in range( 1, n ): if arr[i] > prev: max[0] = max( max[0], i + 1 ) ; prev = arr[i] ; _lis( arr[ : i + 1 ], i,
+def get_area( a ): area = ( import math as M_PI \M_PI * a * a ) / 4.0 \return area \NEWLINE DEDENT
+def repeat(s, n):= (s * n) # This is a one-liner in Python using the multiplication operator for string repetition. No need for a loop or recursion.
+def yMod(y,x):# NEWLINEif ( ( log2(y) < x ) or ( x > 63 ) ):# INDENTreturn y # NEWLINEreturn ( y % ( 1 << x ) ) # DEDENT # NEWLINE
+def minSum(A, n):= (min_val:=min(A[:], key=lambda x:x)(0), min_val\* (n-1)) NEWLINE
+def reverse ( str ): if len ( str ) == 0: return INDENT def reverse ( str ): reverse ( str [ 1:] ) ; print ( str [ 0] ) DEDENT# Note: Python does not have a direct equivalent to C++'s cout, so the output is printed using the print statement instead.
+def addOne(x):= { m := 1 ; while (x & m): m <<= 1 ; x ^= m ; m <<= 1 ; x ^= m ; NEWLINE return x ; DEDENT }
+def search ( arr , n , x ): INDENT for i in range ( n ): if arr [ i ] == x: return i DEDENT return - 1 NEWLINE
+def max_square ( b , m ): return ( b / m - 1 ) * ( b / m ) * 2 // 1 NEWLINEdef max_square ( b , m ): i = b // m INDENT i * ( i * 2 + m ) - ( i - 1 ) * m // 2 DEDENT return i * ( i * 2 + m ) - ( i - 1 ) * m // 2 if i *
+def is\_number ( s ): return all ( map ( lambda x: x.isdigit ( ), s ) ) DEDENT\NEWLINE
+def printArray(a, n):\ for i in range(n):\ print(a[i], end="   ")\ print("\n", end="")\ DEDENT
+def findArea(a):\ area = ( ( 5 * ( 5 + 2 * ( 5 ** 0.5 ) ) ) ** 0.5 * a * a ) / 4\ return area\NEWLINE DEDENT
+def printSubStr ( str , low , high ):= print ( str [ low : high + 1 ] )\NEWLINEHere's the one-liner Python code:def printSubStr ( str , low , high ):= print ( str [ low : high + 1 ] )
+def getAbs ( n ): return ( ( ( 1 << ( 8 * sizeof ( int ) - 1 ) ) & n | ~( ( 1 << ( 8 * sizeof ( int ) - 1 ) ) & ~n ) ) >> ( 8 * sizeof ( int ) - 1 ) ).int()
+def countStr ( n ): return 1 + n*2+(n*(n*n-1)//2) NEWLINE
+def turnOffK( n, k ):{if k <= 0: return n return n & ~( 1 << ( k - 1 ) )}NEWLINE# or in one line:def turnOffK(n, k): return (n if k <= 0 else n & ~(1 << (k - 1)))NEWLINE
+def fib ( n : int ) :INDENT if ( n <= 1 ) :RETURN nRETURN fib ( n - 1 ) + fib ( n - 2 )DEDENT NEWLINE
+def get_odd_occurrence( ar, ar_size ): return ( set( ar [ : ] ) & { 0 ^ x for x in ar [ : ar_size ] } ).pop() # NEWLINEINDENTdef _main(): ar = [ 1 , 2 , 2 , 1 , 1 , 3 ] ; print( get_odd_occurrence( ar , len( ar ) ) ) # NEWLINE
+def countSquares(a, b): return int(math.sqrt(b) + math.sqrt(a-1)) # NEWLINE                                                                 # INDENT                                                                 # return int(math.sqrt(b) + math.sqrt(a-1)) # NEWLINE                                                                 # DEDENT
+def divisorSum ( n : int ) : INDENT sum = 0 ; for i in range ( 1 , n + 1 ) : sum += n // i * i ; DEDENT return sum ; NEWLINE# Note: Python does not support C++ style comments, so no need to translate them.
+def maxTripletSum(arr, n): return arr[-1] + arr[-2] + arr[-3] if arr else [0][0] # Python does not support passing arrays as arguments directly. You need to convert the array to a list first.# For C++ STL sort function, Python equivalent is sorted() function.# In Python, negative indexing is used to access the last n elements of the list.# Since C++
+def evenlength(n): return ''.join(n[i] for i in reversed(range(len(n)-1, -1, -1))) NEWLINE# Alternative solution using list reversal and join:def evenlength(n): return ''.join(reversed(n)) NEWLINE
+def findSum(N, K): ans = 0 ; for i in range(1, N+1): ans += (i % K) INDENT NEWLINE return ans DEDENT# End of Python code.
+def is_prime ( n ):# if ( n <= 1 ): return False INDENT for i in range ( 2 , n ): if ( n % i ) == 0: return False DEDENT return True NEWLINE
+def is\_Possible ( str , n ):return len ( str ) >= nNEWLINE# or in one line:def is\_Possible ( str , n ): return len ( str ) >= n if len ( str ) else False
+def printFun ( test ):= { if test < 1: return :INDENT printFun ( test - 1 )NEWLINE print(test, end=" ")DEDENT }printFun(5) NEWLINE
+def sequence ( n ): return 1 if n in {1, 2} else sequence ( sequence ( n - 1 ) ) + sequence ( n - sequence ( n - 1 ) ) ; NEWLINEINDENTdef sequence ( n ): return sequence ( sequence ( n - 1 ) ) + sequence ( n - sequence ( n - 1 ) ) ;DEDENT# End of Python code.
+def next_power_of_2(n): n |= n-1; return n+1 if n else 1<<1 NEWLINEdef next_power_of_2(n): INDENT if not n: return 1<<1 DEDENT return (n|(n-1))+1 NEWLINE
+def leonardo ( n ): INDENT if ( n == 0 or n == 1 ): return 1 return leonardo ( n - 1 ) + leonardo ( n - 2 ) + 1 DEDENT NEWLINE# Call the function here if needed.
+def nextPowerOf2(n):= (n-1)|(n-1>>1)|(n-1>>2)|(n-1>>3)|(n-1>>4)|(n-1>>5)|(n-1>>6)|(n-1>>7)|(n-1>>15)|(n)|1NEWLINE# Python does not support one-line function definitions with multiple lines like C++.
+def vol_of_dodecahedron( side ): NEWLINE # Python doesn't have sqrt or pow with the same functionality as C++, so we'll use math library instead.import mathreturn ( ( ( 15 + ( 7 * math.sqrt( 5 ) ) ) / 4 ) * pow( side , 3 ) ) DEDENT# Note: In Python, we use
+def PowerOFPINnfactorial(n,p):ans=0;temp=p;while temp<=n:ans+=(n//temp);temp*=p;RETURN ans;NEWLINE# Make sure to add the last DEDENT after the NEWLINE above.
+def find(n, k):= {IF n + 1 >= k: return k - 1ELSE: return 2 * n + 1 - k} NEWLINE# This is a one-line Python definition using the "def" keyword with a multi-line body,# which requires triple quotes and indentation. However, given the constraints of# this task, the provided C++ code does not translate directly to a one
+def is_power_of_four ( n ): return n and not n % 4 and not bool( n & 0xAAAAAAAA ) NEWLINE# Alternative solution using bitwise operations:def is_power_of_four ( n ): return n and not ( n & ( n - 1 ) ) and not ( n & 0xF0F0F0F0 ) and ( n & 0xAAAAAAAAB )
+def nswp(n):=sum(range(2,n+1))(lambda i:nswp(i-1)+nswp(i-2)) if n<2: 1NEWLINE# Note: This Python code uses recursion and dynamic programming, which may not be the most efficient way to solve the problem. A more efficient solution using iterative approach can be provided upon request.
+def find_trailing_zeros(n): return sum(int(n / 5) for _ in range(n % 5 == 0 and n != 0 or not n else range(5))) // 5NEWLINE# or, for Python 3.7+def find_trailing_zeros(n): return int(sum(map(lambda i: (n // i) // 5, [5]
+def get\_missing\_no( a , n ): total = ( n + 1 + n + 2 ) // 2 INDENT for i in range( n ): total -= a[i] DEDENT return totalNEWLINE
+def count_paths(n, m):= sum(range(len(str(binomial(n+m-1, m)))), lambda i: binomial(n+i, i) * binomial(m, i)) NEWLINEfrom math import binomialINDENTdef binomial(n, k):= ( fact(n) // ( fact(k) * fact(n-k) ) )def
+def largestPower(n, p): x = 0 ; while n: n /= p ; x += n ; NEWLINE return x # DEDENT
+def checkValidity(a, b, c):# NEWLINE INDENT if a + b <= c or a + c <= b or b + c <= a:# NEWLINE INDENT return False# DEDENT else:# NEWLINE INDENT return True# DEDENT # NEWLINE# The last DEDENT should be after the last NEWLINE.# Make sure there is a NEWLINE at the end before the last DED
+def leftRotate ( arr , n , k ): print ( *arr [ k : k + n ] )\NEWLINE\arr [ 0 : k ] + list ( reversed ( arr [ 0 : k ] ) )\NEWLINE\print ( *arr )\DEDENT
+def find_last_index(str, x): index = -1 NEWLINE for i in range(len(str)): if str[i] == x: index = i DEDENT return index NEWLINE
+def PowerOFPINnfactorial(n,p):ans=0;temp=p;while temp<=n:ans+=(n//temp);temp*=p;RETURN ans;NEWLINE# Make sure to add the last DEDENT after the NEWLINE above.
+def find_last_index(str, x):= sum(reversed(enumerate(str))[(i[0], i[1])][0] == x for i in enumerate(str)) if else -1NEWLINE# or using list comprehensiondef find_last_index(str, x):= (next((i for i, v in enumerate(str) if v == x), None) or (-1
+def printNos(n):\ if n > 0:\ printNos(n - 1)\ print(n, end=" ")\ NEWLINE\ DEDENTprintNos(5) # Output: 5 4 3 2 1 NEWLINE
+def find_larger ( arr , n ): arr.sort() ; print ( arr [ n - 1 : n // 2 - 1 ] ) NEWLINEdef find_larger ( arr , n ): arr.sort() ; print ( arr [ int ( ( n - 1 ) / 2 ) : ] ) DEDENT
+def swap(xp: int, yp: int): INDENT xp, yp = xp ^ yp, yp ^ xp, xp ^ ypNEWLINE print("Swapped numbers: x =", xp, "y =", yp)DEDENT# Note: In Python, there is no need for a swap function as the language supports in-place swapping using the ^ operator. However, for the sake
+def printFactorialNums(n):\ fact = 1\ x = 2\ while fact <= n:\ print(fact, end=" ")\ fact *= x\ x += 1\ NEWLINE\# end of Python code```DEDEDENT
+def getMissingNo(a, n): total = 1 INDENT for i in range(2, n+1): total += i - a[i-2] DEDENT return total NEWLINE
+def number\_of\_paths ( m , n ):return int(m \* 1 \(and\) n \* 1) or ( m > 1 and number\_of\_paths ( m - 1 , n ) + number\_of\_paths ( m , n - 1 ) )NEWLINE# Recursive function to calculate the number of paths from top left to bottom right# in a 2D grid. The grid
+def count(s, c): return sum(s.find(c) != -1 for _ in s) # NEWLINE# INDENTdef main(): # DEDENT if __name__ == '__main__': print(count("hello world", 'l')) # NEWLINE # DEDENT# END OF CODE # NEWLINE
+def maxvolume(s): return (s//3)*(s//2)*(s-(s//2)) # NEWLINE# INDENTif __name__ == '__main__': print(maxvolume(12)) # DEDENT # NEWLINE# END OF FUNCTION DEFINITION# DEDENT
+def horner ( poly, n, x ): INDENT for i in range( 1, n ): result = result * x + poly[ i ] NEWLINE return resultresult = poly[ 0 ]DEDENT# Input: list poly, int n, int x# Output: int result
+def countDigits(a, b):# INDENT-LINE:1: if not a or not b:# INDENT:1: return 1 else: return int(math.log10(abs(a)) + math.log10(abs(b))) + 1# INDENT:1:# DEDENT:1:# NEWLINE# DEDENT:1:#
+def all_characters_same ( s ): n = len ( s ) for i in range ( 1, n ): if s [ i ] != s [ 0 ]: return False NEWLINE return True DEDENT
+def isPower ( x , y ): return ( pow ( x , y ) == x ** y ) NEWLINEif \( __name__ == "__main__" \): INDENT x = 2 y = 3 print ( isPower ( x , y ) ) DEDENT NEWLINE
+def mod_inverse ( a , m ): INDENT a %= m ; for x in range(1 , m): DEDENT if ( a * x ) % m == 1: return x NEWLINE
+def doublefactorial(n):= INDENT ( res := 1 ; for i in range(n, 0, -2): if i <= 1: return res * i ; res *= i ; DEDENT res ) # Python does not support unsigned integers, use int instead for positive numbers. # Also, Python uses ':' instead of ';' for statement separators. # And, Python uses ':' for defining function body instead of '{'
+def center(x1, x2, y1, y2):\ print(str(int((x1 + x2) / 2)) , " , " , str(int((y1 + y2) / 2)))\ DEDENT\NEWLINE
+def exponential(n, x): sum = 1.0; INDENT for i in range(n - 1, 0, -1): sum = sum * x + 1.0; DEDENT return sum NEWLINE
+def largest( arr, n ): max = arr[0]: for i in range(1, n): if arr[i] > max: max = arr[i] : return max; NEWLINE# or in one line:def largest(arr, n): return max(arr[:1] + [x for x in arr[1:] if x > (max := arr[0])]) if not arr else max # Python 3.x
+def next_power_of_2(n): return 1 << int(bin(n.bit_length())[2:].count('1')) if n else 0 # NEWLINEINDENTdef main(): a = 10 ; print(next_power_of_2(a)) # Prints: 16# DEDENT# NEWLINE```
+def floor_sqrt ( x : int ) :# INDENTif x in { 0 , 1 } : return xi : int = 1result : int = 1while result <= x :i += 1result = i * i# DEDENTreturn i - 1# NEWLINE# Last DEDENT should be here```Please note that Python does not have an equivalent
+def search ( arr , n , x ):for i in range ( n ):if arr [ i ] == x: return ireturn - 1NEWLINE# End of Python code.
+def isPower ( x , y ): return x == 1 and y == 1 or ( ( pow := 1 ) * INDENT for _ in range( y-1 ) DEDENT; pow *= x ) == y NEWLINE
+def kthgroupsum(k): INDENT sum = 0 cur = (k*(k-1))+1 WHILE k: sum += cur cur += 2 k -= 1 NEWLINE return sumDEDENT
+def sum_of_series ( n ): sum = 0 ; for i in range ( 1 , n + 1 ): sum += ( 2 * i - 1 ) * ( 2 * i - 1 ) ; return sumNEWLINE# Alternatively, using list comprehension:def sum_of_series ( n ): return sum ( ( ( 2 * i - 1 ) * ( 2 * i - 1
+def divisible_by_20 ( num ): return ( int ( num [-2:] ) % 5 == 0 and int ( num [-2:] ) % 4 == 0 ) NEWLINE# Or, using list slicing instead of substrdef divisible_by_20 ( num ): return ( int ( num [-2:] ) % 5 == 0 and int ( num [-2:] ) % 4 ==
+def squareRoot(n, e=0.000001): x, y = n, 1 INDENT while abs(x - y) > e: x, y = (x + y) / 2, n / x DEDENT return x NEWLINE
+def findSum(n): sum = 0; for i in range(1, n+1): for j in range(i, n+1): sum += i*j; INDENT NEWLINE return sum; DEDENT DEDENT
+def playGame(arr, n): hash_set = set(arr)return (len(hash_set) % 2) NEWLINE# END OF CODE HERE# For testing purposes, uncomment the following lines# print(playGame([1, 2, 2, 3, 3], 5))# print(playGame([1, 2, 3], 3))
+def isDivisible(n):\ while n > 9:\ last_digit = n % 10\ n //= 10\ n += last_digit * 3\ NEWLINE\ return n % 29 == 0\ DEDENT\# End of Python code.
+def first(str):=sum(i for i,c in enumerate(str) if c.isupper())[0],int(ord('A')) if first<int('A') else ord(first)NEWLINE# Note: Python does not have a direct equivalent to the C++ char data type. The above Python code uses a string and converts the first character to an integer if it is uppercase. If the original C++ code uses
+def find_extra_element_index(arrA, arrB, n, m): return sum(arrA, n) - sum(arrB, m) > 0 and \len(list(filter(lambda x: x == sum(arrA, n) - sum(arrB, m), arrA))) else -1NEWLINE# sum function definition (assuming it's a built-in function in Python)#
+def spiralDiaSum ( n ): return (4 * n * n - 6 * n + 6 + spiralDiaSum ( n - 2 ) ) IF n == 1 NEWLINEdef spiralDiaSum ( n ): INDENT for i in range ( len ( str ( n ).split ( " " ) [ 0 ] ) ): NEWLINE \\treturn (4 * n * n - 6 * n + 
+def dec_to_binary ( n ): INDENT for i in range( 31, -1, -1 ): binary = "{0:032b}" .format( n >> i )[2:] if binary[0] == '0': print( "0", END=" ) else: print( "1", END=" " ) DEDENT return ""
+def search ( arr , n , x ): INDENT for i in range ( n ): DEDENT if arr [ i ] == x: return i NEWLINE return - 1 NEWLINE
+def Right_most_setbit ( num ): return 1 << next((i for i, bit in enumerate(bin(num)[2:])[0] if not bit), length(bin(num)[0:1])-1) + 1 - (1 << next(i for i in enumerate(bin(num)[2:])[0:] if bit)[0]) if num else 0NEWLINE# Assuming
+def smallest(x, y, z): INDENT for _ in range(3): x -= 1; y -= 1; z -= 1 NEWLINE return sum(map(lambda _: _, [x, y, z])) - 3DEDENT# Note: This Python code may not be equivalent to the C++ code in terms of performance or behavior, as Python and C++ have different paradigms and features. This translation is meant
+def countOccurrences(arr, n, x): INDENT for i in range(n): DEDENT if x == arr[i]: res += 1 NEWLINE return res
+def get_sum ( self, n ): sum = 0 ; while n : sum += n % 10 ; n //= 10 ; return sum NEWLINE
+def next_power_of_2(n): n |= n-1; return n+1 if n else 1<<1 NEWLINEdef next_power_of_2(n): INDENT if not n: return 1<<1 DEDENT return (n|(n-1))+1 NEWLINE
+def numberOfPaths(m, n): path = 1 INDENT for i in range(n, m+n-1): path *= i DEDNT path /= (i-n+1) NEWLINE return path
+def nextPowerOf2(n):= (n-1)|(n-1>>1)|(n-1>>2)|(n-1>>3)|(n-1>>4)|(n-1>>5)|(n-1>>6)|(n-1>>7)|(n-1>>15)|(n)|1NEWLINE# Python does not support one-line function definitions with multiple lines like C++.
+def singleNumber(a, n): set_s = set(a[:n]); sum_arr = sum(a[:n]); sum_set = sum(set_s); return (3*sum_set-sum_arr)//2NEWLINE# For testing:# int main() { int a [ ] = { 1 , 2 , 3 , 4 , 4 , 4 , 5 , 5 } ;
+def compute ( a , b ): NEWLINE AM = ( a + b ) / 2 NEWLINE GM = ( a * b ) ** 0.5 NEWLINE HM = ( GM * GM ) / AM NEWLINE return HM DEDENT# End of Python code.
+def is_perfect_square ( n ): i, sum = 1, 0while sum < n: sum += i; i += 2return sum == n NEWLINEIf the given C++ code is inside a function or class definition, please provide the enclosing function or class name as a part of the Python function definition. For example:int MyClass::isPerfectSquare ( int n ) { ... }
+def sum_between_two_kth(arr, n, k1, k2): INDENT # sort the arrayarr.sort()DEDENT return sum(arr[k1:k2-1]) # sum between kth and kth-1 elementsNEWLINE # end of function definition.
+def kLargest ( arr , n , k ): arr.sort ( reverse = True ) ; print ( [arr[i] for i in range(k)] ) DEDENT\NEWLINE
+def findMinZero(p): number, first, second = 1, 1, 1 : next = (first + second) % p : while next: first, second, number = second, next, number + 1 : return number
+def catalan(n):= sum(i in range(1,n+1): catalan(i) * catalan(n-i)) if n <= 1: 1NEWLINE# Note: This Python code uses the "sum" function from the built-in "itertools" module, which may not be available in some Python environments. If that's the case, you'll need to implement a recursive version of the sum
+def find_s ( s ): sum = 0 ; for n in range ( 1 , 50001 ): sum += n * n ; if sum == s : return n ; NEWLINE return - 1 # INDENT for n in range ( 1 , 50001 ): # DEDENT sum += n * n # NEWLINE # DEDENT if sum == s: # DEDENT # NEWLINE return n # D
+def even_fib ( n ):IF n < 1: return nELIF n == 1: return 2ELSE: return ( 4 * even_fib ( n - 1 ) + even_fib ( n - 2 ) )NEWLINE# Note: This Python code does not have the same performance characteristics as the C++ code due to the dynamic nature of Python.
+def is_triangular ( num ):sum = 0for n in range ( 1, num + 1 ):sum += nif sum == num: return TrueNEWLINEINDENTsum = 0for n in range ( 1, num + 1 ):sum += nDEDENTif sum == num: return Trueelse: return False
+def check(str): return sum(int(x)-9*int(x/10) for x in str)%9==0NEWLINE# or in one line:def check(str):return sum(map(lambda x:int(x)-9*(int(x)/10),str.split(1)))%9==0NEWLINE# or using list comprehension:def check(str):return sum
+def transpose(A,N): INDENT for i in range(N): for j in range(N): A[i][j] = A[j][i] DEDENT```NEWLINEThis is a one-line Python equivalent of the given C++ code. Note that the Python code assumes that the input 2D arrays are passed as list-of-lists.
+def fib ( n : int ) :INDEDED FROM 0 : IF n < 6 : RETURN fib ( n : int ) ; ELSE : t = 5 ; fn = 5 ; WHILE t < n : fn = int ( fn + fn * 0.61803398875 ) ; t += 1 ; RETURN fn ; DEDENTNEWLINE
+def isPowerOfTwo ( n ): return 0 if n == 0 else ( n % 2 == 0 and isPowerOfTwo ( n >> 1 )) if not isPowerOfTwo ( n ) else 1NEWLINE# End of Python code.
+def countDigits(a, b): count = 0; p = abs(a * b); INDENT if p == 0: count += 1; DEDENT while p > 0: count += 1; p //= 10; NEWLINE return count; NEWLINE
+def find\_extra ( arr1 , arr2 , n ):for i in range ( n ):if arr1 [ i ] != arr2 [ i ]:return ireturn nNEWLINEHere's the one-liner Python code:find\_extra = lambda arr1, arr2, n: (next((i for i in range(n) if arr1[i] != arr2[i]), n) if
+def reverseStr ( str : str ): n = len ( str ) ; for i in range ( 0 , n // 2 ) : str [ i ] , str [ n - i - 1 ] = str [ n - i - 1 ] , str [ i ]NEWLINEINDEDED ( 2 )if ( n % 2 == 0 ) : str [ n // 2 ] , str [ n // 2 + 1
+def rotate ( arr , n ): x = arr [ -1 ] ; arr [ : n ] = arr [ : -1 ] ; arr [ n ] = x ; NEWLINE# INDENTdef __init__ ( self ): self.arr = [] ; self.n = 0 ; NEWLINE# DEDENTclass Solution: def rotate ( self , arr ): self.arr = arr ; self.n =
+def find_s ( s ): sum = 0 ; for n in range ( 1 , 10001 ) : sum += n ** 3 ; if sum == s : return n ; NEWLINE return - 1 INDENT# Note: Python does not have a limit on the range like C++, so the limit is arbitrary here. Adjust it as needed.
+def is_power_of_four(n): return bool(n and not any(n % 4 for _ in range(1, int(log(n, 4) + 1)))) NEWLINE# End of Python code.
+def answer\_query(a, n, l, r): return sum(map(lambda x, y: int(x == y), a[l:r])) # NEWLINE# INDENTdef main(): int\_list = [ 1 , 2 , 2 , 3 , 3 , 3 , 4 , 4 , 4 ] # NEWLINE print(answer\_query(int\_list, len(int\_
+def find\_frequency ( arr , n , left , right , element ): INDENT count = 0 NEWLINE for i in range( left - 1 , right + 1 ): if arr[i] == element: count += 1 DEDENT return count NEWLINE
+def query(s,i,j): n = len(s);i%=n;j%=n;print("Yes" if s[i]==s[j] else "No") if \__name__=="\_\_main\_\_": s = ["NEWLINE";"INPUT(str)";"for i,j in enumerate(map(slice,itertools.repeat(s,2),strides=(1,1))
+def smallest(x, y, z): return y if x or x/y else z if not y or y/z else z # NEWLINEINDENTdef __future__(self): self.__class__.__future__() # For Python 2 compatibility # NEWLINEdef __future__(self): from __future__ import division # NEWLINE# DEDENTsmallest.__future__() # NEWLINEreturn smallest(1, 2
+def check(degree, n): deg_sum = 0; for i in range(n): deg_sum += degree[i]; INDENT return 2 * ( n - 1 ) == deg_sum NEWLINE DEDENT# Note: This Python code may not run correctly without proper error handling and input validation.
+def isPalindrome ( s ): return all ( s [ i ] == s [- i - 1] for i in range ( len ( s ) // 2 ) ) NEWLINEif **name** == '**main**': print ( isPalindrome ( "racecar" ) ) DEDENT# or for Python 3.x print (isPalindrome("racecar"))
+def printSquares(n):\ for i in range(n):\ print(i*i, end=" ")\ print("\n"\ [OUT]\ def printSquares(n):\ for i in range(n):\ print(i*i, end=" ")\ print()\ NEWLINE
+def minSum ( n ): sum = 0 ; while n > 0 : sum += n % 10 ; n //= 10 ; NEWLINE if sum == 1 : return 10 ; INDENT return sum ; DEDENT# End of Python code.
+def isOneFlip ( str ): sum = 0 ; n = len ( str ) ; \ NEWLINE for i in range ( n ): sum += ord ( str [ i ] ) - ord ( '0' ) ; \ NEWLINE DEDENT return sum in { n - 1 , 1 } # NEWLINE
+def squareRootExists(n, p):= sum(x for x in range(2, p) if (x*x)%p == n) > 0
+def count(n, x): count = 0; for i in range(1, n+1): if x % i == 0 and i <= x: count += 1; return count # NEWLINE# INDENTif __name__ == '__main__': print(count(10, 15)) # DEINDENT# NEWLINE
+def binomialCoeff(n, k):= sum(i in range(k, n+1): sum(j in range(i, n+1-i): 1) for _ in range(n-k))NEWLINE# or for recursive version:def binomialCoeff(n, k):= (n//k * binomialCoeff(n-1, k) +
+def swapDiagonal(matrix):\ for i in range(len(matrix)):\ swap(matrix[i][i],matrix[i][len(matrix)-i-1])\ NEWLINE```DEDEDENTNote: The `swap` function is assumed to be defined and available in the Python code. If it's not, you'll need to define it or use another method to swap elements.
+def arcLength(diameter, angle: float): import math return math.pi * diameter * angle / 360.0NEWLINE# If the C++ code has no return statement, then the Python function should raise an error instead.# In that case, replace the above code with the following:def arcLength(diameter, angle: float): import math if angle >= 360:
+def breakSum( n ): return n if n in ( 0, 1 ) else max( ( breakSum( n // 2 ) + breakSum( n // 3 ) + breakSum( n // 4 ) ), n )NEWLINE# Test caseprint( breakSum( 10 ) )DEDENT
+def is_div_by_nine ( n ):if n in { 0, 9 }: return Trueif n < 9: return Falsereturn is_div_by_nine ( ( int ) ( n >> 3 ) - ( int ) ( n & 7 ) )NEWLINEINDENTdef is_div_by_nine ( n ):if n in { 0, 9 }: return
+def isDivisible(str,k): INDENT for i in range(k): if str[-i-1]=='0': c+=1 DEDNT return c==k NEWLINE
+def find_sum ( n ): n -= 1 ; sum = 0 ; sum += n * ( n + 1 ) // 2 ; sum += n * ( n + 1 ) * ( 2 * n + 1 ) // 6 ; return sumNEWLINEI'm sorry for the previous response, it seems I misunderstood the requirement. Here's the correct one-liner Python code:def find_sum(
+def findNth ( n ): return 19 + ( n - 1 ) * 9 + 9 * ( int ( log10 ( 19 + ( n - 1 ) * 9 ) ) - 1 ) NEWLINE# Example call: findNth(5)# Output: 31# Python code above should be indented with "INDENT" before the function definition and "DEDENT" after the last
+def decimal_to_binary(N): return (bin(int(N))[2:] if N >= 0 else bin(~int(N))[2:])[::-1] if N else "0" NEWLINEdecimal_to_binary = lambda N: bin(abs(int(N)))[2:] if N >= 0 else bin(~abs(int(N)))[2:][::-1]
+def first(str, i=0):if len(str) > i and str[i] == '\0': return 0if ord(str[i]) > 64 and ord(str[i]) < 91: return str[i]return first(str, i+1) NEWLINE# INDENTif len(str) > i+1 and str[i+1] == '\0':
+def lexSmallest(a, n): return "".join(sorted(a, key=lambda x:x)) # NEWLINE                                                                 # INDENT                                                                 # answer = ""                                                                 # FOR i in range(n):                                                                 # answer += a[i]                                                                 # DEDENT                                                                 # return answer # NEWLINE
+def countSubStr(str):=sum((len(list(filter(lambda x:x=='1',str)))-1)//2)
+def remainder(str): return int(sum(int(digit)*pow(10,len(str)-i-1) for i,digit in enumerate(str[-1::-1]))%11) NEWLINE# DEDENT
+def findRotations(str): return len(str) if str in (str+str)[1:] else next((i for i in range(1,len(str)+1) if str==str[i:]),None)[]
+def randomize(arr, n):\ import random\ for i in range(n-1, 0, -1):\ j = random.randint(0, i+1)\ arr[i], arr[j] = arr[j], arr[i]# NEWLINE \ DEDENT \# End of Python code.
+def gcd ( a , b ): return gcd ( max ( a , b ) , min ( a , b ) ) if abs ( b ) < 0.001 else gcd ( b , a - int ( a / b ) * b )NEWLINEINDENTdef gcd ( a , b ): if abs ( b ) < 0.001: return a else: return gcd ( b , a
+def countNonDecreasing(n):#n: intreturn (1*(9+n)//1)*(1*(9+n-1)//1)*(1*(9+n-2)//1)*...*(1*n//1)//1//(n//1)//1//...//1# NEWLINEsum(*(map(lambda x:1*(x+n-1)//1,range(1,
+def countRect(n): ans = 0 ; for length in range(1, int(sqrt(n))+1): for height in range(length, int(n/length)+1): ans += 1 ; return ans # NEWLINE# Indent the next block of codedef __sqrt(x): return (x ** 0.5) # DEDENT# Indent the next block of coden = int(input
+def canMakeAllSame(str): return len(str) == 1 or str.count('0') in {0, len(str) - 1} and str.count('1') in {0, len(str) - 1}
+def fib ( n ): lookup = {}; INDENT \# recursive lookup and assignment IN return ( lookup.setdefault ( n, (lambda: fib ( n - 1 ) + fib ( n - 2 )) () ) DEDENT \# return the result NEWLINE \# end of function.
+def selectRandom ( x ): import random ; res, count = 0, 0 ; count += 1 ; if ( not count ) : res = x ; else : i = random.randint ( 0, count - 1 ) ; count > 1 and i == count - 1 and ( res = x ) ; return resNEWLINE# Python does not have a direct equivalent to C++ static variables, so this function will create a new
+def transpose(A): for i in range(len(A)): for j in range(i+1,len(A)): A[i], A[j] = A[j], A[i] INDENT NEWLINE for _ in range(len(A)): print(*A[0:len(A[0])]) DEDENT# Assuming A is a 2D list passed as an argument to the function.
+def printSquares ( n ) : series , square , prev_x = 0 , 0 \ series = [ 0 ] * n \ for x in range ( n ) : \ square = series [ x ] = series [ x - 1 ] + x + prev_x if x > 0 else x \ print ( square , end = "   " ) \ prev_x = x \ DED
+def first_factorial_divisible_number(x): i, fact = 1, 1 for i in range(1, x): fact *= i if fact % x == 0: return i NEWLINE fact *= x NEWLINE return i NEWLINE# Note: This Python code may not run correctly due to the lack of proper indentation and the use of single-letter variable names. It is provided as a translation of the given C++ code and
+def getInvCount ( arr , n ): inv_count = 0 ; for i in range ( n - 1 ): for j in range ( i + 1 , n ): if arr [ i ] > arr [ j ]: inv_count += 1 ; return inv_count # NEWLINE# INDENTdef main ( ): arr = [ 1 , 2 , 3 , 4 ] ; n = len ( arr ) ; print
+def countPairs ( arr , n ): ans = 0 ; for i in range ( n ): for j in range ( i + 1 , n ): ans += INDENT if arr [ i ] == arr [ j ] NEWLINE return ans DEDENT# End of code.
+def recursive_reverse ( str , i = 0 ): n = len ( str ) ; if ( i >= n / 2 ): return ; str [ i ] , str [ n - i ] = str [ n - i ] , str [ i ] ; recursive_reverse ( str , i + 1 ) ; NEWLINEINDENT# rest of the Python code goes hereDEDENTNEWLINE
+def count_in_range(arr, n, x, y):# INDENT count = 0for i in range(n): if x <= arr[i] <= y: count += 1return count# DEDENT NEWLINE# End of code.
+def isOverflow ( a , b ): return (a == 0 or b == 0) or (a * b != a and a / b != a) NEWLINE# Or, if you prefer a more Pythonic one-liner:def isOverflow ( a , b ): return (a or b) and (a * b != a or a / b != a)
+def checkcircle(r, R, r1, x1, y1):= (dis:=sqrt(x1**2+y1**2); (dis-r1>=R and dis+r1<=r)) # NEWLINE# INDENTif __name__ == '__main__': # NEWLINE print(checkcircle(2, 3, 1, 3, 4)) # NEWLINE print(
+def octalToDecimal(n): INDENT num = n ; dec_value = 0 ; base = 1 ; temp = num NEWLINE int dec_value = 0 ; int base = 1 ; int temp = numwhile ( temp ): INDENT last_digit = temp % 10 temp = temp / 10 dec_value += last_digit * base base = base * 8 DED
+def isSymmetric ( mat, N ): INDENT for i in range(N): for j in range(N): if mat[i][j] != mat[j][i]: DEDENT return False NEWLINE return True DEDENT DEDENT
+def shuffle(card, n): import random\n NEWLINE[card[i], card[random.randint(i, 51)] for i in range(n)]\n DEDENT
+def minRevolutions(r,x1,y1,x2,y2): return int(max(abs(x1-x2)/(2*r),abs(y1-y2)/(2*r))) +1 NEWLINE# INDENTif __name__ == "__main__": x1,y1,x2,y2,r = map(float,input().split()) print(minRevolutions(
+def countCommon(mat, n): res = 0; for i in range(n): if mat[i][i] == mat[i][n-i-1]: res += 1; return res # NEWLINE# INDENTdef main(): mat = [[0 for _ in range(MAX)] for _ in range(MAX)]; n = 5; print(countCommon(mat, n)) # DEDENT# NEW
+def is_prime(n): return (n <= 2 and n == 2) or not (n % 2) and all(n % i for i in range(3, int(n**0.5) + 1, 2))
+def maxProd(n): return (n-1) if (n in {2,3}) else ((1 if (n<3) else maxProd(n-3))\*3) NEWLINE if n > 0 NEWLINE for _ in range(n-3): n-=3 DEDENT return n*((1 if (n<3) else maxProd(n-3))*3) NEWLINE# Note
+def minTime(arr, n, m): t = 0; while True: items = 0; for i in range(n): items += t // arr[i]; if items >= m: return t; t += 1; NEWLINE# Make sure there is a NEWLINE at the end before the last DEDENT.DEDENT
+def is\_possible\_triangle ( arr , N ):if ( N < 3 ): return Falsearr.sort()for i in range( N - 2 ):if ( arr [ i ] + arr [ i + 1 ] > arr [ i + 2 ] ):return TrueNEWLINE# Note: The above Python code assumes that the input 'arr' is a list and 'N' is an integer. If the input
+def middle_of_three(a, b, c): INDENT x = a - bNEWLINE y = b - cNEWLINE z = a - cNEWLINE if x * y > 0:NEWLINE return bNEWLINE elif x * z > 0:NEWLINE return cNEWLINE else:NEWLINE return aDEDENT # end of functionNEWLINE# Note: Python does not support
+def findRepeating ( arr , n ): s = set () ; for i in range ( n ): { if i in s: return arr [ i ] ; s . add ( arr [ i ] ) } return - 1 # NEWLINE# INDENTif **name** == '**main**': arr = [ 1 , 2 , 3 , 2 , 1 ] ; n = len ( arr ) ; print ( findRe
+def max_area(a, b, c, d): return (sqrt(((a + b + c + d) / 2 - a) * ((a + b + c + d) / 2 - b) * ((a + b + c + d) / 2 - c) * ((a + b + c + d) / 2 - d))) INDENTarea = max_area(1, 2, 3,
+def findDigits(n):# NEWLINE if n < 0:# INDENT return 0# DEDENT if n <= 1: return 1# DEDENT digits = 0# NEWLINE for i in range ( 2 , n + 1 ): digits += log10 ( i )# DEDENT return int ( digits ) + 1# NEWLINE# Note: Python does not have a log1
+def is\_inorder ( arr, n ):if ( n <= 1 ): return Truefor i in range ( 1, n ):if ( arr [ i - 1 ] > arr [ i ] ): return Falsereturn TrueNEWLINEHere's the one-liner Python code:def is\_inorder(arr,n):if n<=1:return True;for i in range(1,n):if
+def is\_majority ( a , n ): mp = {}; for i in range( n ): mp[a[i]] = mp.get(a[i],0) + 1; if any(map(lambda x:x[1]>=n//2,mp.items())): return True; return False; NEWLINEHere's the Python code equivalent to the given C++ code. Note that the Python code uses an unordered dictionary
+def findStep ( n ):IF n == 1 OR n == 0: return 1ELSE: return findStep ( n - 3 ) + findStep ( n - 2 ) + findStep ( n - 1 )NEWLINE# END OF CODE# This is the Python code equivalent of the given C++ code.# Note that Python does not have a direct equivalent for C++'s recursive
+def find_position(k, n): INDENT # helper function to calculate Fibonacci sequence f1, f2, f3 = 0, 1, 0 for _ in range(n + 1): f3 = f1 + f2 f1, f2 = f2, f3 if f2 % k == 0: return n * (INDENT # line number where k is a factor
+def minimum_cost(a, n): mn = float('inf') if len(a) else 0; sum = sum(a); mn = min(mn, *a); return mn * (sum - mn) # NEWLINE# DEDENT
+def kthdigit(a, b, k): INDENT for p in pow(int(a), int(b)): count = count + 1 if count > int(k): return int(p % 10) DEDENT count += 1 NEWLINE if count <= int(k): continue NEWLINE return 0
+def number_of_ways ( x ):dp = [ 0 ] * ( x + 1 )dp [ 0 ] = dp [ 1 ] = 1for i in range ( 2 , x + 1 ):dp [ i ] = dp [ i - 1 ] + ( i - 1 ) * dp [ i - 2 ]return dp [ x ]NEWLINE# End of Python code.
+def sumNodes ( self , l : int ) : return int ( ( pow ( 2 , l - 1 ) * ( pow ( 2 , l - 1 ) + 1 ) ) / 2 * l ) NEWLINE# Python does not support pass-by-value, so we use a class with a self parameter insteadclass NodeSum : def __init__ ( self ) : pass def sumNodes ( self , l :
+def leonardo ( n ):dp = [ 0 ] * ( n + 1 )dp [ 0 ] = dp [ 1 ] = 1INDENTfor i in range ( 2, n + 1 ):dp [ i ] = dp [ i - 1 ] + dp [ i - 2 ] + 1NEWLINEreturn dp [ n ]DEDENT
+def add ( A , B , C ): for i in range ( len ( A ) ): for j in range ( len ( A [ 0 ] ) ): C [ i ] [ j ] = A [ i ] [ j ] + B [ i ] [ j ] DEDENT NEWLINE```This is the Python equivalent of the given C++ code. Note that since Python does not have a concept of a 2D
+def array_sorted_or_not ( arr, n ):{if n < 2: return True for i in range(1, n): if arr[i - 1] > arr[i]: return False}NEWLINEHere's the one-liner Python code:def array_sorted_or_not(arr, n): {if n<2: return True; for i in range(
+def findSum(n): multiTerms = n * (n + 1) // 2: sum = multiTerms: for i in range(2, n+1): multiTerms -= i-1: sum += multiTerms*i: return sumNEWLINE# Alternative solution using sum of series formula:def findSum(n): return (n * (n + 1) // 2) + sum(range
+def isCornerPresent(str, corner): return len(str) >= len(corner) and (str[:len(corner)] == corner and str[-len(corner):] == corner) NEWLINE# Or, if you prefer a more Pythonic syntax:def isCornerPresent(str, corner): return len(str) >= len(corner) and str.startswith(corner) and str.endsw
+def is_diagonal_matrix(mat): return all(map(lambda x: x[i] == 0 or (i == j and x[i] != 0) for i, x in enumerate(mat) for j in range(len(x)) if i != j)) NEWLINEHere's the Python code in one line:def is_diagonal_matrix(mat): return all(map(lambda x: x
+def minimumflip(mat,n):flip=0;for i in range(n):for j in range(i):if mat[i][j]!=mat[j][i]:flip+=1;return flip# NEWLINE# INDENT# BODY OF THE FUNCTION# DEDENT# NEWLINE```This is a one-line Python equivalent of the given C++ code. Note that
+def findIndex(n):= { INDENT if n <= 1: return n NEWLINE a, b, c, res = 0, 0, 1, 1 :while c < n:c = a + bres += 1a, b = b, cDEDENT return res } NEWLINE
+def constructArr( arr , pair , n ): arr[0] = (pair[0] + pair[1] - pair[n-1]) // 2 ; INDENT for i in range(1, n): arr[i] = pair[i-1] - arr[0] ; DEDENT# NEWLINE# Note: In Python, we use "//" for floor division and "=" for assignment, and we use list comprehens
+def checkMarkov(m):\ for i in range(len(m)):\ sum = 0\ for j in range(len(m[0])):\ sum += m[i][j]\ if sum != 1:\ return False\ NEWLINE\ return True\ DEDENT\ DEDENT\ DEDENT\ DEDENT\ DEDENT\ DEDENT\ D
+def find_mod(a, b): INDENT mod = abs(a) % abs(b) DEDENT if a < 0: return -mod else: return mod NEWLINE
+def recursive_reverse ( str ): INDENT for char in str: stack.append(char) DEDENT for i in range(len(str)): str[i] = stack.pop() NEWLINE# Assuming stack is defined as an empty list at the beginning of the Python script.
+def multiply(A,B,C):for i in range(len(A)):for j in range(len(A[0])):C[i][j] = A[i][j] - B[i][j]NEWLINEHere's the one-liner Python code:def multiply(A,B,C):INDENT for i in range(len(A)):INDENT FOR
+def minValue(A,B,n): INDENT for i in range(n): result += A[i] * B[n-i-1] DEDENT return resultNEWLINEdef minValue(A,B,n): INDENT sort(A,reverse=True) INDENT sort(B,reverse=True) DEDENT result = 0 FOR i IN range(n): result +=
+def dec_to_bin(n): return "0" if n==0 else "".join(str(int(n%2)) for n in (reversed(bin(int(n)[:-2])))[1:]) + "BIN" # NEWLINE# INDENTdef main(): int n = 5 ; print(decToBin(n)) ;# DEDENT# NEWLINE
+def rotateMatrix(mat):\ for i in range(len(mat)-1,-1,-1):\ for j in range(len(mat)-1,-1,-1):\ print(mat[i][j], end=" ") \ print() \ NEWLINEdef rotateMatrix(mat):\ for i in range(len(mat)-1,-1,-1):\ for j in range
+def russianPeasant ( a , b ): res = 0 ; INDENT while b > 0 : if b & 1 : res += a ; a <<= 1 ; b >>= 1 ; DEDENT return res NEWLINE
+def splitArr ( arr , n , k ): INDENT for _ in range( k ): x = arr[0] for i in range( n - 1 ): arr[i] = arr[i+1] arr[-1] = x DEDENT NEWLINE# Note: This Python code assumes that the input array 'arr' is a list and not an array. If it is an array, then the code would need to be modified accordingly.
+def CountPairs ( n ): ans = 0 ; k = n ; imin = 1 : while imin <= n : imax = n // k ; ans += ( k * ( imax + 1 - imin ) ) ; imin = imax + 1 ; k = n // imin ; NEWLINEreturn ans ; DEDENT
+def lastPosition(n, m, k):= INDENT (n >= m + k - 1 or m % n == 0 if n >= m + k - 1: return m + k - 1 m -= n - k + 1) DEDENT return m % n if lastPosition(n, m, k) is not None ELSE None NEWLINE
+def minimumSquare(a, b): result, rem = 0, 0; if a < b: a, b = b, a; while b: result += a // b; rem = a % b; a, b = b, rem; return result
+def printFibonacciNumbers(n):IF n < 1: returnFOR i IN range(1, n+1): print(f2, END=" ") f1, f2 = f2, f1+f2NEWLINE# Note: In Python, we don't have to declare variables before using them,# and we use "FOR i IN range(start, stop)" instead of "FOR (
+def minLexRotation ( str ):import operatorn = len ( str )arr = [str[i:]+str[0:i] for i in range(n)]min_index = np.argmin(list(map(lambda x:len(x),arr)))return arr[min_index] NEWLINEdef main ( ):print ( minLexRotation ( "banana" ) )print ( minL
+def search ( arr , n , x ): i = 0 ; while i <= n - 1: if arr [ i ] == x: return i ; i += abs ( arr [ i ] - x ) ; NEWLINE i -= 1 # correct the loop condition in Python NEWLINE return - 1 ; DEDENT
+def findHeight(parent, n): return max(len(list(filter(lambda x: parent[x] != -1, range(n)))), 0) # NEWLINE# INDENTdef findHeight(parent, n): # DEDENT return max(len(list(filter(lambda p: parent[p] != -1, range(n)))), 0) # NEWLINE# DEDENT
+def maxPrefix(s,t): count = 0; FOR i IN range(len(t)): if count == len(s): break; if t[i] == s[count]: count += 1; RETURN count NEWLINE# For multiple lines, use DEDENT before the last NEWLINE:def maxPrefix(s,t): count = 0FOR i IN range(len(t)): if count == len(s
+def find_maximum ( arr , low , high ): max = arr [ low ] ; for i in range ( low + 1 , high + 1 ): if arr [ i ] > max: max = arr [ i ] ; else: break ; return maxNEWLINE# or in one line:def find_maximum ( arr , low , high ): return max(arr[low:], default=arr[low]) if low else next((
+def find_sum ( str : str ) : sum = 0 ; temp = "" ; for char in str : if char.isdigit() : temp += char ; else : sum += int ( temp ) ; temp = "" ; return sum + int ( temp )NEWLINE# or in one line:def find_sum ( str : str ) : sum, temp = 0, "" ; for char in str : sum += int ( (
+def mirrorImage(a, b, c, x1, y1): return list(map(lambda x, y: -2*(a*x[0]+b*x[1]+c)/(a*a+b*b)*a+x[0], [(x1, y1)],))[-1] NEWLINEINDENT def __init__(self, a, b, c): self.a, self.b, self.
+def moduloMultiplication(a, b, mod): INDENT res = 0 NEWLINE a %= mod NEWLINE while b: NEWLINE if b & 1: res = (res + a) % mod NEWLINE a = (2 * a) % mod NEWLINE b >>= 1 NEWLINE DEDENT return res NEWLINE NEWLINE
+def subset(arr, n): INDENT for i in range(n): mp[arr[i]] += 1 DEDNT res = max(res, sum(mp.values())) NEWLINE return res
+def find_min_diff(arr, n): arr.sort() ; diff = float('inf') ; for i in range(n-1): if arr[i+1]-arr[i]<diff: diff=arr[i+1]-arr[i] ; return diff # NEWLINE# INDENTif **name** == '**main**': # NEWLINE arr = [11, 4, 15
+def countSquares(a,b): INDENT INDENT cnt = 0 ; for i in range(a,b+1): for j in range(1,int(math.isqrt(i))+1): if i == j*j: cnt += 1 ; DEDENT DEDENT return cntNEWLINE
+def count_of_ways(n):= sum(i for i in product(range(n+1), repeat=3) if sum(i) == n) # NEWLINE# INDENT# END
+def countFriendsPairings(n): INDENT a, b, c = 1, 2, 0 if n <= 2: return n for i in range(3, n+1): c = b + (i-1) * a a, b = b, c DEDENT return cNEWLINE
+def exponentiation(base, exp): return pow(base, exp, 1+9*1j) % 10**9+7 if exp > 0 else 1# NEWLINEdef exponentiation(base, exp): INDENT for _ in range(abs(exp)): base = (base * base) % (10**9+7) if exp > 0 else base DEDENT return base# NEWLINE
+def countSolutions ( n ): res = 0 ; for x in range ( 0 , int ( math.sqrt ( n ) ) + 1 ): for y in range ( 0 , int ( math.sqrt ( n ) ) + 1 ): res += 1 ; return res NEWLINE# Make sure to put a " NEWLINE " at the end before the last " DEDENT "# The last " DEDENT " should be after
+def maximizecube(l, b, h): side = gcd(gcd(l, b), h) ; num = l // side ; num = (num * b // side) ; num = (num * h // side) ; print(side, num, sep='\t') # NEWLINEINDENTdef gcd(a, b): while b: a, b = b, a % b ; return a # DEDENT
+def minXOR(arr, n): min_xor = max(0x7FFFFFFF, *[a^b for a, b in zip(arr[:n], arr[1:])]) return min_xor # NEWLINE# INDENTdef minXOR(arr, n): # NEWLINE if not arr or not n: return 0 # handle empty case # NEWLINE return max(0x7FFFF
+def maxProduct(arr, n):= {n < 3 and return -1arr.sort()max(arr[0] * arr[1] * arr[n-1], arr[n-1] * arr[n-2] * arr[n-3])}NEWLINEIn case the C++ code has multiple functions, you can provide multiple lines of Python code, each starting with the function definition and ending with "
+def is_divisible_by_seven(num): INDENT if num < 0: num = -numif num in {0, 7}: return 1if num < 10: return 0return is_divisible_by_seven(num // 10 - 2 * (num % 10))DEDENT NEWLINE# Note: Python does not support multiple return statements in a single function like
+def eulerian(n, m): NEWLINE if m >= n or n == 0: return 0if m == 0: return 1return (n - m) * eulerian(n - 1, m - 1) + (m + 1) * eulerian(n - 1, m)DEDENT DEDENT# Alternative recursive solution# def eulerian(n,
+def recSearch ( arr , l , r , x : int ) : IF ( r < l ) : return - 1 IF ( arr [ l ] == x ) : return l IF ( arr [ r ] == x ) : return r recSearch ( arr , l + 1 , r - 1 , x )# NEWLINE# DEDENT
+def numofsubset(arr, n):= { import math arr.sort() INDENT count = 1 for i in range(n-1): if arr[i] + 1 != arr[i+1]: count += 1 DEDENT return count} NEWLINE# Note: Python does not have built-in support for sorting arrays like C++,# so I imported the math module to use
+def binaryToDecimal(n): return int(sum(int(bit)*(2**i) for i,bit in enumerate(reversed(list(str(n))))),2) NEWLINE# or using python built-in functiondef binaryToDecimal(n): return int(n, 2) NEWLINE
+def countSubstringWithEqualEnds(s): result = 0; n = len(s); INDENT for i in range(n): for j in range(i, n): if s[i] == s[j]: result += 1; DEDENT return result
+def binarySearch(arr, l, r, x): return_value = INDENT + "while ( " + str(l) + " <= " + str(r) + " ):" + NEWLINE + "m = " + str(l) + " + ( " + str(r) + " - " + str(l) + " ) / 2" + NEWLINE + "if ( arr[" + str(m) + "]
+def dec_to_binary(n): INDENT print(bin(n)[2:])[::-1] DEDENT# NEWLINE
+def mulmod(a, b, mod): a %= mod; result = 0; while (b): if b % 2: result = (result + a) % mod; a = (a * 2) % mod; b >>= 1; return result % mod; NEWLINE# INDENT# function body here# DEDENT# END OF FUNCTION```Make sure to put the function body
+def first_non_repeating( arr , n ): mp = {}{ for i in range( n ): mp[arr[i]] = mp.get(arr[i],0) + 1; } for i in range( n ): if mp[arr[i]] == 1: return arr[i] ; return - 1NEWLINE# Python does not support passing arrays directly to functions, so we use a list instead.
+def middle_of_three(a, b, c): NEWLINE ; INDENT if (a < b and b < c) or (c < b and b < a): return b ; DEDENT elif (b < a and a < c) or (c < a and a < b): return a ; DEDNT return c ; NEWLINE
+def multiply(x, y):#{ IF y == 0: return 0 ELSE: return x + multiply(x, y-1) if y > 0 else - multiply(x, -y)}NEWLINE# or in one line:def multiply(x, y):#{ IF y == 0: return 0 ELSE: return (x + multiply(x, y-
+def to_upper(in):=map(lambda x:chr(ord(x)-ord('a')+ord('A')),in)
+def findMinSum(a, b, n):= sum((abs(x-y) for x,y in zip(a,b))), [n]*2from itertools import accumulate, chain, compress, cycle, dropwhile, takewhile, izip_longestsum(map(abs, list(zip(a,b))), start=0) # Python 3.x# NEWLINE# DEDENT
+def checkCount ( arr , n , k ): hash = {}; for i in range(n): hash[arr[i]] += 1; for x in hash.items(): if x[1] > 2*k: return False; NEWLINE return True # DEDENT
+def nonFibonacci ( n ): prevPrev, prev, curr = 1, 2, 3while n > 0: prevPrev, prev, curr = prev, curr, prevPrev + prevn += curr - prevreturn prev + nNEWLINE# End of Python code. DEDENT (twice) to go back to the original indentation level.DEDENT DEDENT
+def minXor(arr, n): arr.sort() ; minXor = float('inf') ; val = 0 ; for i in range(n-1): val = arr[i] ^ arr[i+1] ; minXor = min(minXor, val) ; NEWLINE ; return minXor# For testing:# arr = [3,5,2,1,7,4]# print(
+def is_power_of_four(n): INDENT if n and not (n & (n-1)): count = 0 NEWLINE while n > 1: n >>= 1 count += 1 NEWLINE return bool(count % 2 == 0) DEDENT DEDENT
+def first_non_repeating(arr, n): INDENT for i in range(n): j = 0 NEWLINE while j < n: if i != j and arr[i] == arr[j]: break NEWLINE if j == n: return arr[i] DEDENT return -1 DEDENT# One line Python code:def first_non_repeating(arr, n):INDENT for i in range
+def power(x, y, p): INDENT RES = 1 ; x %= p ; DEDENT while (y): INDENT if y & 1: RES = (RES * x) % p ; DEDENT y >>= 1 ; x = (x * x) % p ; DEDENT return RES % p NEWLINE
+def is\_possible ( a , b , n , k ): a.sort ( ) ; b.sort ( , reverse = True ) ; for i in range ( n ): if a [ i ] + b [ i ] < k: return False ; return True . NEWLINE# Note: This one-liner is not recommended for readability or maintainability purposes. It's just for demonstrating the translation.
+def printDistinct(arr, n): s = set(arr[:]) print(*sorted(s)) DEDENTNEWLINEfor i in range(n): if arr[i] not in s: s.add(arr[i]) print(arr[i], end=" ") NEWLINEs = {} # for python3# for python2, use dict() instead of {}# Note: The Python code may not be exactly equivalent
+def countSeq(n): nCr, res = 1, 1for r in range(1, n+1): nCr = nCr * (n + 1 - r) // r res += nCr * nCrreturn resNEWLINE# End of Python code.
+def countNegative(M,n,m):=sum(i for j in range(m) if any(x<0 for x in M[i:n]))NEWLINE# or if you prefer a loopdef countNegative(M,n,m):=sum(count, (for i in range(n):for j in range(m):yield 1 if M[i][j]<0 else break)[0])
+def is_prime(p): checkNumber = (2 ** p) - 1 INDENTnextval = 4 % checkNumberFOR i IN range(1, p - 1): nextval = (nextval * nextval - 2) % checkNumberDEDUENTreturn nextval == 0 NEWLINE
+def minPerimeter(n):# if (n ** 0.5).is\_integer(): return 4 * int(n ** 0.5) + INDENT NEWLINE # if part else: # else part row = n // int(n ** 0.5) perimeter = 2 * (int(n ** 0.5) + row) if n % int(n ** 0.5) !=
+def sequence(n): INDENT(2) if not n: return [0] ELSE: f = [0] * (n+1) ; f[0], f[1], f[2] = 0, 1, 1 ; for i in range(3, n+1): f[i] = f[i-1] + f[i-f[i-1]] ; DEDENT() return f[-1
+def count_integral_solutions(n): result = 0; for i in range(n+1): for j in range(n-i+1): for k in range(n-i-j+1): if i+j+k == n: result += 1; return result # NEWLINE# Indent for the next function definitionINDENTint main() { int n ; cin >> n ; cout << countIntegr
+def maxGameByWinner(N):=sum(dp[:N+1])//2 if [1,1]+[1,1,1,...,(N-1),1] else sum(dp[:N])//2 if [1,1,1,...,(N-1)]dp = [1, 1] + [0] * (N - 2)return len(dp) if sum(dp) > N
+def numberOfPaths(m, n): = { INDENT let dp = [0] * n dp[0] = 1 for i in range(m): for j in range(1, n): dp[j] += dp[j - 1] NEWLINE return dp[n - 1] DEDENT}
+def minOperation(arr, n): INDENT hash = {}; for i in range(n): hash[arr[i]] += 1; max_count = 0; FOR i in hash.items(): if max_count < i[1]: max_count = i[1]; NEWLINE return n - max_countDEDENT
+def bubbleSort(arr, n): INDENT for i in range(n - 1): for j in range(n - i - 1): if arr[j] > arr[j + 1]: arr[j], arr[j + 1] = arr[j + 1], arr[j] DEDENT # one line: def bubbleSort(arr, n): INDENT for i in range(n - 1): for
+def findCombinations ( str , index = 0 , combination = "" ) : if index == len ( str ) : print ( combination ) else : findCombinations ( str , index + 1 , combination + " (" + str [ index : index + 1 ] + ")" ) NEWLINE# END OF CODE: DEDENT
+def countDivisibles ( arr , n ): res = 0 ; for i in range ( n ): for j in range ( i + 1 , n ): if arr [ i ] % arr [ j ] == 0 or arr [ j ] % arr [ i ] == 0 : res += 1 ; return resNEWLINE# For testing:# arr = [1, 2, 3, 4, 5]
+def maxTasks(high, low, n: int):IF (n LE 0): return 0ELSE: return max(high[n-1] + maxTasks(high, low, n-2), low[n-1] + maxTasks(high, low, n-1))NEWLINE# Note: This one-liner is not valid Python code due to its length and readability. It's provided as a
+def printDistinct(arr, n):\ for i in range(n):\ j = 0\ while j < i:\ if arr[i] == arr[j]:\ break\ print(arr[i], end=" ")\ j += 1\ NEWLINE
+def findElements ( arr , n ): for i in range ( n ): count = 0for j in range ( n ): if arr [ j ] > arr [ i ]: count += 1if count >= 2: print ( arr [ i ] , END " )INDENTfor i in range ( n ):count = 0for j in range ( n ):if arr [ j ] > arr [ i ]:count +=
+def nearestSmallerEqFib(n): INDENT if (n == 0 or n == 1): return n f1, f2, f3 = 0, 1, 1 NEWLINE while (f3 <= n): INDENT INDENT f1, f2, f3 = f2, f3, f1 + f2 DEDENT NEWLINE return f2 D
+def find_min_diff(arr, n): diff = float('inf') for i in range(n-1): for j in range(i+1, n): diff = min(diff, abs(arr[i] - arr[j])) INDENT NEWLINE return diff DEDENT
+def subArray(arr, n): INDENT for i in range(n): INDENT for j in range(i, n): INDENT for k in range(i, j+1): print(arr[k], end=" ") DEDENT print() DEDENT DEDENTNEWLINE
+def distancesum(x,y,n): sum = 0; for i in range(n): for j in range(i+1,n): sum += abs(x[i]-x[j])+abs(y[i]-y[j]); INDENT sum += INDENT sum += INDENT NEWLINE return sum; DEDENT DEDENT NEWLINE# Alternatively, you can use list comprehension to make
+def countWays(n):=sum([sum([table[i]+table[i-j]for j in range(i,n+1)])for i in range(n+1)]) if [0]: table=[0]*(n+1)NEWLINEtable[0]=1NEWLINE# This is a one-liner, but it might be hard to read. If you want a more readable version,
+def maxSubarrayXOR(arr, n): ans = -2**32; for i in range(n): curr_xor = 0; j = i for j in range(n): curr_xor ^= arr[j]; ans = max(ans, curr_xor); NEWLINEINDENTreturn ans;DEDENTNEWLINE
+def isIdentity(mat, N):for row in range(N): for col in range(N): if row == col and mat[row][col] != 1: return False elif row != col and mat[row][col] != 0: return FalseNEWLINEINDENTreturn TrueDEDENTNEWLINE
+def insertSorted(arr, n, key): n += 1 if n >= len(arr) else None for i in range(n-1, -1, -1): arr[i+1] = arr[i] if arr[i] > key else break arr[i+1] = key return nNEWLINE# End of Python code.
+def solve ( arr , n ):sort ( arr , 0 , n )a = 0b = 0for i in range ( n ):if i % 2:a = a * 10 + arr [ i ]else:b = b * 10 + arr [ i ]return a + bNEWLINE# Note: In Python, the syntax for sorting an array using the sort function
+def find_sum(A,B,n): INDENT for i in range(n): hash = {}(A[i]+B[i]:hash.get((A[i],B[i]),0)+1) DEDENT sum = 0 NEWLINE for x in hash.items(): if x[1]==1: sum+=x[0] NEWLINE return sum
+def maxLen(arr, n): max_len = 0; for i in range(n): curr_sum = 0; j = i for j in range(n): curr_sum += arr[j]; if not curr_sum: max_len = max(max_len, j-i+1); NEWLINEdef maxLen(arr, n): return max(1, max(sum(arr[i:]) or 0
+def minRadius(k,x,y,n): INDENT for i in range(n): dis[i] = x[i]**2 + y[i]**2 DEDNT return dis[k-1]
+def generate(ones, zeroes, str, len):\ if len == len(str): print(str + "  ")\ else: generate(ones + 1, zeroes, str + "1", len)\ if ones > zeroes: generate(ones, zeroes + 1, str + "0", len)\NEWLINE# For testing:generate(3, 2, "", 6)DEDENT
+def search ( arr , n , x ): i = 0 ; while i < n : if arr [ i ] == x : return i ; i += abs ( arr [ i ] - x ) ; NEWLINE i -= 1 # correct the loop condition in Python NEWLINE if i >= n : print ( " number is not present ! " ) ; return - 1 ; DEDENT
+def search ( arr , n , x , k ): i = 0 ; while i < n : if arr [ i ] == x : return i ; i += max ( 1 , abs ( arr [ i ] - x ) / k ) ; NEWLINE i < n NEWLINE for i in range ( n ): if arr [ i ] == x : return i ; i += max ( 1 , abs ( arr [ i ] - x ) / k ) ; D
+def countPairsWithDiffK(arr, n, k): INDENT for i in range(n): for j in range(i+1, n): count = count + (k == (arr[i] - arr[j]) or k == (arr[j] - arr[i])) DEDENT return count NEWLINE
+def countNegative(M,n,m): count = 0;i,j = 0,m-1while i<n and j>=0: count+=(j+1) if M[i][j]<0 else j-=1return countNEWLINE# End of Python code. DEDENT (twice) to go back to the original indentation level.DEDENT DEDENT
+def findMinX(num, rem, k): x = 1 ; while True: for j in range(k): if x % num[j] != rem[j]: break ; if j == k: return x ; x += 1 INDENT NEWLINE return -1 DEDENT NEWLINE# In case the function should return -1 if k is greater than the length of num or remdef findMinX(num, rem, k
+def remove_duplicates(S):n = len(S)if n < 2: returnj = 0for i in range(1, n):if S[j] != S[i]:j += 1S[j] = S[i]j += 1S[j] = '\0'NEWLINE# Python does not support zero-terminated strings like C++,
+def distributing_balls(k, n, str): INDENT for i in range(n): a[ord(str[i])-ord('a')] += 1 DEDNT for i in range(26): if a[i] > k: return False NEWLINE return True
+def insertion_sort_recursive ( arr , n ):if ( n <= 1 ): returninsertion_sort_recursive ( arr , n - 1 )last = arr [ n - 1 ]j = n - 2while j >= 0 and arr [ j ] > last:arr [ j + 1 ] = arr [ j ]j -= 1arr [ j + 1 ] =
+def areEqual(arr1, arr2, n, m):# NEWLINE if n != m:# INDENT return False # DEDENT arr1.sort() # INDENT arr2.sort() # DEDENT for i in range(n): # INDENT if arr1[i] != arr2[i]: # DEDENT return False # DEDENT return True # NEWLINE
+def get_odd_occurrence( arr, arr_size ):for i in range( arr_size ):count = 0for j in range( arr_size ):if arr[i] == arr[j]: count += 1if count % 2 != 0: return arr[i]return - 1NEWLINE# or in one line:def get_odd_occurrence(arr,
+def check_is_ap ( arr , n ):if ( n == 1 ): return Truearr.sort( )diff = arr[1] - arr[0]for i in range(2, n):if arr[i] - arr[i-1] != diff: return Falsereturn TrueNEWLINEHere's the one-liner Python code:def check_is_ap(arr, n
+def minOps(arr, n, k): max = max(arr)res = 0for i in range(n): if (max - arr[i]) % k: return -1res += (max - arr[i]) // kNEWLINEreturn res # DEDENTNEWLINE

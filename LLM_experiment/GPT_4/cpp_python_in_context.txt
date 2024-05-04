@@ -1,0 +1,328 @@
+def areaSquare(side): NEW_LINE INDENT return side * side NEW_LINE DEDENT
+def intersection(n): NEW_LINE INDENT return n * (n - 1) NEW_LINE DEDENT
+def fun(n): NEW_LINE INDENT return n & (n - 1) NEW_LINE DEDENT NEW_LINE
+def cassini(n): NEW_LINE INDENT return -1 if (n & 1) else 1 NEW_LINE DEDENT NEW_LINE
+def hexagonalNum(n): NEW_LINE INDENT return n * (2 * n - 1) NEW_LINE DEDENT NEW_LINE
+def addOne(x): NEW_LINE INDENT return (-(~x)) NEW_LINE DEDENT NEW_LINE
+def circumference(r): NEW_LINE INDENT return 2 * 3.141592653589793 * r NEW_LINE DEDENT NEW_LINE
+def find_Area(r): NEW_LINE INDENT return (2 * r * r) NEW_LINE DEDENT
+def check(n): NEW_LINE INDENT return 1162261467 % n == 0 NEW_LINE DEDENT
+def mergeTwoHalf(A): NEW_LINE INDENT return sorted(A) NEW_LINE DEDENT NEW_LINE
+def isEven(n): NEW_LINE INDENT return n % 2 == 0 NEW_LINE DEDENT
+def largest(arr): NEW_LINE INDENT return max(arr) NEW_LINE DEDENT NEW_LINE
+def height(N): NEW_LINE INDENT return ceil(log2(N + 1)) - 1 NEW_LINE DEDENT
+def numberOfSticks(x): NEW_LINE INDENT return (3 * x * (x + 1)) // 2 NEW_LINE DEDENT
+def summingSeries(n): NEW_LINE INDENT return n**2 NEW_LINE DEDENT NEW_LINE
+def pentagonalNum(n): NEW_LINE INDENT return (3*n*n - n) // 2 NEW_LINE DEDENT
+def isEven(n): NEW_LINE INDENT return n % 2 == 0 NEW_LINE DEDENT NEW_LINE
+def binomialCoeffSum ( n ) : NEW_LINE INDENT return ( 1 << n ) NEW_LINE DEDENT NEW_LINE
+def rangeGCD(n, m): NEW_LINE INDENT return n if n == m else 1 NEW_LINE DEDENT NEW_LINE
+def power(n): NEW_LINE INDENT return 2 if n == 1 else 2 * power(n - 1) NEW_LINE DEDENT
+def compute_average(a, b): NEW_LINE INDENT return (a + b) // 2 NEW_LINE DEDENT NEW_LINE
+def Circumference(a): NEW_LINE INDENT return 4 * a NEW_LINE DEDENT
+def multiplyWith3Point5(x): NEW_LINE INDENT return (x << 1) + x + (x >> 1) NEW_LINE DEDENT NEW_LINE
+def slope(x1, y1, x2, y2): NEW_LINE INDENT return (y2 - y1) / (x2 - x1) NEW_LINE DEDENT NEW_LINE
+def factorial(n): NEW_LINE INDENT return 1 if n == 0 else n * factorial(n - 1) NEW_LINE DEDENT
+def oppositeSigns(x, y): NEW_LINE INDENT return (x ^ y) < 0 NEW_LINE DEDENT
+def swapNibbles(x): NEW_LINE INDENT return ((x & 0x0F) << 4 | (x & 0xF0) >> 4) NEW_LINE DEDENT NEW_LINE
+def countNonEmptySubstr(str): NEW_LINE INDENT return len(str) * (len(str) + 1) // 2 NEW_LINE DEDENT
+def getModulo(n, d): NEW_LINE INDENT return (n & (d - 1)) NEW_LINE DEDENT
+def nthTerm(n): NEW_LINE INDENT return (n * n) + (n * n * n) NEW_LINE DEDENT
+def isMultipleOf10(n): NEW_LINE INDENT return n % 15 == 0 NEW_LINE DEDENT
+def factorial(n): NEW_LINE INDENT return 1 if n == 0 else n * factorial(n-1) NEW_LINE DEDENT NEW_LINE
+def count_of_ways(n): NEW_LINE INDENT return (n + 1) * (n + 2) // 2 NEW_LINE DEDENT
+def gcd(a, b): NEW_LINE INDENT return b if a == 0 else gcd(b % a, a) NEW_LINE DEDENT NEW_LINE
+def rectCount(n, m): NEW_LINE INDENT return (m * n * (n + 1) * (m + 1)) // 4 NEW_LINE DEDENT NEW_LINE
+def volumeOfEllipsoid(r1, r2, r3): NEW_LINE INDENT return 1.33 * 3.14 * r1 * r2 * r3 NEW_LINE DEDENT
+def getRemainder(num, divisor): NEW_LINE INDENT return num - divisor * (num // divisor) NEW_LINE DEDENT
+def findMaximumPieces(n): NEW_LINE INDENT return 1 + n * (n + 1) // 2 NEW_LINE DEDENT
+def evenbinomialCoeffSum(n): NEW_LINE INDENT return (1 << (n - 1)) NEW_LINE DEDENT NEW_LINE
+def lis(arr, n): NEW_LINE INDENT return max((_lis(arr, n, [1]*n), 1)) NEW_LINE DEDENT
+def areaOctagon(side): NEW_LINE INDENT return 2 * (1 + sqrt(2)) * side * side NEW_LINE DEDENT NEW_LINE
+def surface_area_octahedron ( side ) : NEW_LINE INDENT return ( 2 * ( 3 ** 0.5 ) * ( side * side ) ) NEW_LINE DEDENT NEW_LINE
+def sortit(arr, n): NEW_LINE INDENT for i in range(n): arr[i] = i + 1 NEW_LINE DEDENT NEW_LINE
+def findSum(n): NEW_LINE INDENT return n * (n + 1) * (n + 2) * (3 * n + 1) // 24 NEW_LINE DEDENT NEW_LINE
+def vol_of_octahedron(side): NEW_LINE INDENT return ((side * side * side) * (sqrt(2) / 3)) NEW_LINE DEDENT
+def Resources(process, need): NEW_LINE INDENT return process * (need - 1) + 1 NEW_LINE DEDENT
+def procal(n): NEW_LINE INDENT return (3.0 * n) / (4.0 * (n * n) - 1) NEW_LINE DEDENT NEW_LINE
+def cost(a): NEW_LINE INDENT return (len(a) - 1) * min(a) NEW_LINE DEDENT
+def isPowerOfTwo(x): NEW_LINE INDENT return x and not (x & (x - 1)) NEW_LINE DEDENT NEW_LINE
+def factorial(n): NEW_LINE INDENT return 1 if n == 0 else n * factorial(n-1) NEW_LINE DEDENT
+def findRepeating(arr, n): NEW_LINE INDENT return sum(arr) - ((n - 1) * n // 2) NEW_LINE DEDENT
+def reverse(str): NEW_LINE INDENT return str[::-1] NEW_LINE DEDENT NEW_LINE
+def assignValue(a, b, x): NEW_LINE INDENT return [a, b][x] NEW_LINE DEDENT
+def countSetBits(n): NEW_LINE INDENT return sum(1 for i in range(32) if n & (1 << i)) NEW_LINE DEDENT NEW_LINE
+def bin(n): NEW_LINE INDENT return bin(n >> 1) if n > 1 else None, print(n & 1, end=' ') NEW_LINE DEDENT NEW_LINE
+def sumOfSeries(n): NEW_LINE INDENT return (0.666) * (1 - 1 / pow(10, n)) NEW_LINE DEDENT
+def calculateSum(n): NEW_LINE INDENT return (1 << n) - 1 NEW_LINE DEDENT
+def countSetBits(n): NEW_LINE INDENT return 0 if n == 0 else (n & 1) + countSetBits(n >> 1) NEW_LINE DEDENT NEW_LINE
+def countSetBits(n): NEW_LINE INDENT return 0 if n == 0 else 1 + countSetBits(n & (n - 1)) NEW_LINE DEDENT NEW_LINE
+def kthSmallest(arr, n, k): NEW_LINE INDENT return sorted(arr)[k - 1] NEW_LINE DEDENT NEW_LINE
+def lis(arr, n): NEW_LINE INDENT return max((_lis(arr, n, [1]*n)) for i in range(n)) NEW_LINE DEDENT NEW_LINE
+def getArea(a): NEW_LINE INDENT return (3.141592653589793 * a * a) / 4.0 NEW_LINE DEDENT NEW_LINE
+def repeat(s, n): NEW_LINE INDENT return s if n == 1 else s + repeat(s, n - 1) NEW_LINE DEDENT NEW_LINE
+def yMod(y, x): NEW_LINE INDENT return y if (math.log2(y) < x or x > 63) else (y % (1 << x)) NEW_LINE DEDENT NEW_LINE
+def minSum(A): NEW_LINE INDENT return min(A) * (len(A) - 1) NEW_LINE DEDENT
+def reverse(str): NEW_LINE INDENT return if len(str) == 0 else (reverse(str[1:]), print(str[0], end='')) NEW_LINE DEDENT NEW_LINE
+def addOne(x): NEW_LINE INDENT return x ^ -~x NEW_LINE DEDENT
+def search(arr, n, x): NEW_LINE INDENT return next((i for i in range(n) if arr[i] == x), -1) NEW_LINE DEDENT NEW_LINE
+def maxSquare(b, m): NEW_LINE INDENT return (b // m - 1) * (b // m) // 2 NEW_LINE DEDENT NEW_LINE
+def isNumber(s): NEW_LINE INDENT return all(c.isdigit() for c in s) NEW_LINE DEDENT
+def printArray(a): NEW_LINE INDENT for i in a: print(i, end=" ▁ "); print() NEW_LINE DEDENT
+def findArea(a): NEW_LINE INDENT return (sqrt(5 * (5 + 2 * (sqrt(5)))) * a * a) / 4 NEW_LINE DEDENT
+def printSubStr(str, low, high): NEW_LINE INDENT for i in range(low, high + 1): print(str[i], end='') NEW_LINE DEDENT
+def getAbs(n): NEW_LINE INDENT return ((n + (mask := n >> (32 - 1))) ^ mask) NEW_LINE DEDENT
+def countStr(n): NEW_LINE INDENT return 1 + (n * 2) + (n * ((n * n) - 1) // 2) NEW_LINE DEDENT
+def turnOffK(n, k): NEW_LINE INDENT return n if k <= 0 else (n & ~(1 << (k - 1))) NEW_LINE DEDENT
+def fib(n): NEW_LINE INDENT return n if n <= 1 else fib(n-1) + fib(n-2) NEW_LINE DEDENT NEW_LINE
+def getOddOccurrence(ar): NEW_LINE INDENT return reduce(lambda res, num: res ^ num, ar) NEW_LINE DEDENT NEW_LINE
+def countSquares(a, b): NEW_LINE INDENT return int((b**0.5) - (a**0.5 - 0.0000001) + 1) NEW_LINE DEDENT
+def divisorSum(n): NEW_LINE INDENT return sum((n // i) * i for i in range(1, n + 1)) NEW_LINE DEDENT NEW_LINE
+def maxTripletSum(arr): NEW_LINE INDENT return sum(sorted(arr)[-3:]) NEW_LINE DEDENT
+def evenlength(n): NEW_LINE INDENT return n + n[::-1] NEW_LINE DEDENT NEW_LINE
+def findSum(N, K): NEW_LINE INDENT return sum(i % K for i in range(1, N + 1)) NEW_LINE DEDENT
+def isPrime(n): NEW_LINE INDENT return False if n <= 1 else all(n % i != 0 for i in range(2, n)) NEW_LINE DEDENT
+def isPossible(str, n): NEW_LINE INDENT return True if len(str) >= n else False NEW_LINE DEDENT
+def printFun(test): NEW_LINE INDENT return if test < 1 else (print(f"{test} ▁ ", end=''), printFun(test - 1), print(f"{test} ▁ ", end='')) NEW_LINE DEDENT
+def sequence(n): NEW_LINE INDENT return 1 if (n == 1 or n == 2) else sequence(sequence(n - 1)) + sequence(n - sequence(n - 1)) NEW_LINE DEDENT NEW_LINE
+def nextPowerOf2(n): NEW_LINE INDENT return n if n and not (n & (n - 1)) else 1 << (n.bit_length()) NEW_LINE DEDENT
+def leonardo(n): NEW_LINE INDENT return 1 if (n == 0 or n == 1) else leonardo(n-1) + leonardo(n-2) + 1 NEW_LINE DEDENT NEW_LINE
+def nextPowerOf2(n): NEW_LINE INDENT return (n - 1) | (n - 1) >> 1 | (n - 1) >> 2 | (n - 1) >> 4 | (n - 1) >> 8 | (n - 1) >> 16 | 0 + 1 NEW_LINE DEDENT NEW_LINE
+def vol_of_dodecahedron(side): NEW_LINE INDENT return (((15 + (7 * (sqrt(5)))) / 4) * (pow(side, 3))) NEW_LINE DEDENT NEW_LINE
+def PowerOFPINnfactorial(n, p): NEW_LINE INDENT return sum(n // (p**i) for i in range(1, int(math.log(n, p)) + 1)) NEW_LINE DEDENT
+def find(n, k): NEW_LINE INDENT return k - 1 if n + 1 >= k else 2 * n + 1 - k NEW_LINE DEDENT
+def isPowerOfFour(n): NEW_LINE INDENT return n != 0 and (n & (n - 1)) == 0 and not (n & 0xAAAAAAAA) NEW_LINE DEDENT
+def nswp(n): NEW_LINE INDENT return 1 if (n == 0 or n == 1) else 2 * nswp(n - 1) + nswp(n - 2) NEW_LINE DEDENT
+def findTrailingZeros(n):NEW_LINE INDENT return sum(n // (5**i) for i in range(1, int(math.log(n, 5))+1)) NEW_LINE DEDENT NEW_LINE
+def getMissingNo(a, n): NEW_LINE INDENT return (n + 1) * (n + 2) // 2 - sum(a) NEW_LINE DEDENT NEW_LINE
+def countPaths(n, m): NEW_LINE INDENT return 1 if (n == 0 or m == 0) else (countPaths(n - 1, m) + countPaths(n, m - 1)) NEW_LINE DEDENT NEW_LINE
+def largestPower(n, p): NEW_LINE INDENT return sum(n := n // p for _ in iter(int, 1)) NEW_LINE DEDENT
+def checkValidity(a, b, c): NEW_LINE INDENT return False if (a + b <= c or a + c <= b or b + c <= a) else True NEW_LINE DEDENT NEW_LINE
+def leftRotate(arr, n, k): NEW_LINE INDENT return ' ▁ '.join(str(arr[i % n]) for i in range(k, k + n)) NEW_LINE DEDENT NEW_LINE
+def findLastIndex(str, x): NEW_LINE INDENT return max(i if char == x else -1 for i, char in enumerate(str)) NEW_LINE DEDENT
+def PowerOFPINnfactorial(n, p): NEW_LINE INDENT return sum(n // (p ** i) for i in range(1, n + 1) if p ** i <= n) NEW_LINE DEDENT
+def findLastIndex(str, x): NEW_LINE INDENT return next((i for i in range(len(str)-1, -1, -1) if str[i] == x), -1) NEW_LINE DEDENT
+def printNos(n): NEW_LINE INDENT return (printNos(n - 1), print(n, end=" ▁ ")) if n > 0 else None NEW_LINE DEDENT
+def findLarger(arr): NEW_LINE INDENT return ' ▁ '.join(map(str, sorted(arr)[len(arr)//2:][::-1])) NEW_LINE DEDENT NEW_LINE
+def swap(xp, yp): NEW_LINE INDENT xp[0], yp[0] = yp[0], xp[0] NEW_LINE DEDENT NEW_LINE
+def printFactorialNums(n): NEW_LINE INDENT while ((lambda fact=1, x=2: (fact <= n and (print(fact, "▁"), True) and [fact*x, x+1]))[0]): pass NEW_LINE DEDENT
+def getMissingNo(a, n): NEW_LINE INDENT return sum(range(1, n+2)) - sum(a) NEW_LINE DEDENT
+def numberOfPaths(m, n): NEW_LINE INDENT return 1 if (m == 1 or n == 1) else numberOfPaths(m - 1, n) + numberOfPaths(m, n - 1) NEW_LINE DEDENT NEW_LINE
+def count(s, c): NEW_LINE INDENT return sum(1 for i in s if i == c) NEW_LINE DEDENT NEW_LINE
+def maxvolume(s): NEW_LINE INDENT return (s // 3) * (s - s // 3) // 2 * (s - s // 3 - (s - s // 3) // 2) NEW_LINE DEDENT
+def horner(poly, n, x): NEW_LINE INDENT return sum(poly[i] * x**(n-i-1) for i in range(n)) NEW_LINE DEDENT
+def countDigits(a, b): NEW_LINE INDENT return 1 if (a == 0 or b == 0) else int(math.log10(abs(a)) + math.log10(abs(b))) + 1 NEW_LINE DEDENT
+def allCharactersSame(s): NEW_LINE INDENT return all(c == s[0] for c in s) NEW_LINE DEDENT
+def isPower(x, y): NEW_LINE INDENT return int(log(y)/log(x)) == log(y)/log(x) NEW_LINE DEDENT
+def modInverse(a, m): NEW_LINE INDENT return next((x for x in range(1, m) if (a * x) % m == 1), None) NEW_LINE DEDENT
+def doublefactorial(n): NEW_LINE INDENT return 1 if (n == 0 or n == 1) else n * doublefactorial(n - 2) NEW_LINE DEDENT NEW_LINE
+def center(x1, x2, y1, y2): NEW_LINE INDENT return (x1 + x2) / 2, (y1 + y2) / 2 NEW_LINE DEDENT
+def exponential(n, x): NEW_LINE INDENT return 1 if n == 0 else 1 + x * exponential(n-1, x) / n NEW_LINE DEDENT NEW_LINE
+def largest(arr, n): NEW_LINE INDENT return max(arr) NEW_LINE DEDENT NEW_LINE
+def nextPowerOf2(n): NEW_LINE INDENT return n if n and not (n & (n - 1)) else (1 << (n.bit_length())) NEW_LINE DEDENT NEW_LINE
+def floorSqrt(x): NEW_LINE INDENT return x if (x == 0 or x == 1) else next(i - 1 for i, result in enumerate(range(x+1), start=1) if i * i > x) NEW_LINE DEDENT NEW_LINE
+def search(arr, n, x): NEW_LINE INDENT return next((i for i in range(n) if arr[i] == x), -1) NEW_LINE DEDENT
+def isPower(x, y): NEW_LINE INDENT return True if x == 1 and y == 1 else any(x**i == y for i in range(0, y.bit_length()+1)) NEW_LINE DEDENT
+def kthgroupsum(k): NEW_LINE INDENT return sum((k * (k - 1)) + 1 + 2 * i for i in range(k)) NEW_LINE DEDENT NEW_LINE
+def sumOfSeries(n): NEW_LINE INDENT return sum((2*i-1)**2 for i in range(1, n+1)) NEW_LINE DEDENT
+def divisibleBy20(num): NEW_LINE INDENT return ((int(num[-2:]) % 5 == 0) and (int(num[-2:]) % 4 == 0)) NEW_LINE DEDENT NEW_LINE
+def squareRoot(n): NEW_LINE INDENT return x if (x - y < 0.000001) else (squareRoot((x + y) / 2, n / ((x + y) / 2), n) if y != 1 else squareRoot(n, n / n + 1, n)) NEW_LINE DEDENT NEW_LINE
+def findSum(n): NEW_LINE INDENT return sum(i * j for i in range(1, n + 1) for j in range(i, n + 1)) NEW_LINE DEDENT NEW_LINE
+def playGame(arr) : NEW_LINE INDENT return 1 if len(set(arr)) % 2 == 0 else 2 NEW_LINE DEDENT
+def isDivisible(n): NEW_LINE INDENT return all((n % 29 == 0 if n < 100 else (lambda last_digit=n % 10: setattr(__import__('builtins'), 'n', n // 10 + last_digit * 3))() or True for _ in iter(int, 1))) NEW_LINE DEDENT NEW_LINE
+def first(str): NEW_LINE INDENT return next((c for c in str if c.isupper()), '0') NEW_LINE DEDENT
+def find_extra_element_index(arrA, arrB, n, m): NEW_LINE INDENT return arrA.index(sum(arrA) - sum(arrB)) NEW_LINE DEDENT NEW_LINE
+def spiralDiaSum(n): NEW_LINE INDENT return 1 if n == 1 else (4 * n * n - 6 * n + 6 + spiralDiaSum(n - 2)) NEW_LINE DEDENT
+def decToBinary(n): NEW_LINE INDENT return ''.join('1' if (n >> i) & 1 else '0' for i in range(31, -1, -1)) NEW_LINE DEDENT
+def search(arr, n, x): NEW_LINE INDENT return next((i for i in range(n) if arr[i] == x), -1) NEW_LINE DEDENT
+def Right_most_setbit(num): NEW_LINE INDENT return next((i + 1 for i in range(INT_SIZE) if num & (1 << i)), 1) NEW_LINE DEDENT NEW_LINE
+def smallest(x, y, z): NEW_LINE INDENT return 0 if not x or not y or not z else 1 + smallest(x - 1, y - 1, z - 1) NEW_LINE DEDENT NEW_LINE
+def countOccurrences(arr, n, x): NEW_LINE INDENT return sum(1 for i in range(n) if arr[i] == x) NEW_LINE DEDENT
+def getSum(n): NEW_LINE INDENT return sum(int(digit) for digit in str(n)) NEW_LINE DEDENT NEW_LINE
+def nextPowerOf2(n): NEW_LINE INDENT return n if n and not (n & (n - 1)) else 1 << (n.bit_length()) NEW_LINE DEDENT NEW_LINE
+def numberOfPaths(m, n): NEW_LINE INDENT return functools.reduce(lambda path, i: path * i // (i - n + 1), range(n, m + n - 1), 1) NEW_LINE DEDENT NEW_LINE
+def nextPowerOf2(n): NEW_LINE INDENT return (lambda x: (x - 1 | (x - 1) >> 1 | (x - 1) >> 2 | (x - 1) >> 4 | (x - 1) >> 8 | (x - 1) >> 16) + 1)(n) NEW_LINE DEDENT NEW_LINE
+def singleNumber(a): NEW_LINE INDENT return (3 * sum(set(a)) - sum(a)) // 2 NEW_LINE DEDENT
+def compute(a, b): NEW_LINE INDENT return ((lambda AM, GM: (GM * GM) / AM)((a + b) / 2, (a * b)**0.5)) NEW_LINE DEDENT NEW_LINE
+def isPerfectSquare(n): NEW_LINE INDENT return any(n == sum([i for i in range(1, n+1, 2) if (sum := sum + i if 'sum' in locals() else i) <= n]) for sum in [0]) NEW_LINE DEDENT
+def sumBetweenTwoKth(arr, n, k1, k2): NEW_LINE INDENT return sum(sorted(arr)[k1:k2-1]) NEW_LINE DEDENT
+def kLargest(arr, k): NEW_LINE INDENT return print(" ▁ ".join(map(str, sorted(arr, reverse=True)[:k])), end=" ▁ ") NEW_LINE DEDENT NEW_LINE
+def findMinZero(p): NEW_LINE INDENT return next((number for number, (first, second, next) in enumerate(((1, 1, 1), *((second, (first+second)%p, (first+second)%p) for first, second, next in iter(lambda x=(1, 1, 1): (x[1], (x[0]+x[1])%p, (x[0]+x[1])%p), None) if next)), 2) if not next), None) NEW_LINE DEDENT NEW_LINE
+def catalan(n): NEW_LINE INDENT return 1 if (n <= 1) else sum(catalan(i) * catalan(n - i - 1) for i in range(n)) NEW_LINE DEDENT
+def findS(s): NEW_LINE INDENT return next((n for n in range(1, s+1) if sum(n*n for n in range(1, n+1)) == s), -1) NEW_LINE DEDENT
+def evenFib(n): NEW_LINE INDENT return n if n < 1 else 2 if n == 1 else (4 * evenFib(n - 1)) + evenFib(n - 2) NEW_LINE DEDENT NEW_LINE
+def isTriangular(num): NEW_LINE INDENT return False if num < 0 else any(sum(n for n in range(1, num+1 if (sum := sum + n) <= num else sum)) == num for n in range(1, num+1)) NEW_LINE DEDENT NEW_LINE
+def check(str): NEW_LINE INDENT return sum(int(char) for char in str) % 9 == 0 NEW_LINE DEDENT
+def transpose(A, B): NEW_LINE INDENT [B[i][j] for i in range(N) for j in range(N)] NEW_LINE DEDENT NEW_LINE
+def fib(n): NEW_LINE INDENT return f[n] if n < 6 else (fib(n-1) + fib(n-2)) if n < 72 else round(5 * ((1 + 5 ** 0.5) / 2) ** n / (5 ** 0.5)) NEW_LINE DEDENT NEW_LINE
+def isPowerOfTwo(n): NEW_LINE INDENT return 0 if n == 0 else all(n % 2**i == 0 for i in range(n.bit_length())) NEW_LINE DEDENT
+def countDigits(a, b): NEW_LINE INDENT return 1 if abs(a * b) == 0 else len(str(abs(a * b))) NEW_LINE DEDENT NEW_LINE
+def findExtra(arr1, arr2, n): NEW_LINE INDENT return next((i for i in range(n) if arr1[i] != arr2[i]), n) NEW_LINE DEDENT NEW_LINE
+def reverseStr(s): NEW_LINE INDENT return s[::-1] NEW_LINE DEDENT NEW_LINE
+def rotate(arr): NEW_LINE INDENT arr.insert(0, arr.pop()) NEW_LINE DEDENT
+def findS(s): NEW_LINE INDENT return next((n for n in range(1, s) if (sum(n**3 for n in range(1, n + 1)) == s)), -1) NEW_LINE DEDENT NEW_LINE
+def isPowerOfFour(n): NEW_LINE INDENT return 0 if (n == 0) else all(n % 4**i == 0 for i in range(int(n**0.5) + 1)) if n > 0 else False NEW_LINE DEDENT NEW_LINE
+def answer_query(a, n, l, r): NEW_LINE INDENT return sum(1 for i in range(l, r) if a[i] == a[i + 1]) NEW_LINE DEDENT
+def findFrequency(arr, n, left, right, element): NEW_LINE INDENT return sum(1 for i in range(left - 1, right) if arr[i] == element) NEW_LINE DEDENT NEW_LINE
+def query(s, i, j): NEW_LINE INDENT return "Yes" if s[i % len(s)] == s[j % len(s)] else "No" NEW_LINE DEDENT NEW_LINE
+def smallest(x, y, z): NEW_LINE INDENT return y if not (y // x) else (x if not (x // z) else z) if not (y // x) else z NEW_LINE DEDENT
+def check(degree, n): NEW_LINE INDENT return 2 * (n - 1) == sum(degree) NEW_LINE DEDENT NEW_LINE
+def isPalindrome(str): NEW_LINE INDENT return all(str[i] == str[~i] for i in range(len(str) // 2)) NEW_LINE DEDENT NEW_LINE
+def printSquares(n): NEW_LINE INDENT for x, square, odd in zip(range(n), [0], [1]): NEW_LINE INDENT print(square, " ▁ ", end="") NEW_LINE square += odd NEW_LINE odd += 2 NEW_LINE DEDENT NEW_LINE DEDENT
+def minSum(n): NEW_LINE INDENT return 10 if (sum := sum(int(d) for d in str(n))) == 1 else sum NEW_LINE DEDENT
+def isOneFlip(str): NEW_LINE INDENT return (sum([int(ch) - int('0') for ch in str]) == len(str) - 1 or sum([int(ch) - int('0') for ch in str]) == 1) NEW_LINE DEDENT NEW_LINE
+def squareRootExists(n, p): NEW_LINE INDENT return any((x * x) % p == n for x in range(2, p)) NEW_LINE DEDENT
+def count(n, x): NEW_LINE INDENT return sum(1 for i in range(1, min(n, x) + 1) if x // i <= n and x % i == 0) NEW_LINE DEDENT NEW_LINE
+def binomialCoeff(n, k): NEW_LINE INDENT return 1 if (k == 0 or k == n) else binomialCoeff(n - 1, k - 1) + binomialCoeff(n - 1, k) NEW_LINE DEDENT NEW_LINE
+def swapDiagonal(matrix): NEW_LINE INDENT return [matrix[i][i], matrix[i][-i-1], matrix[i][-i-1], matrix[i][i]] for i in range(len(matrix)) NEW_LINE DEDENT
+def arcLength(diameter, angle): NEW_LINE INDENT return 0 if angle >= 360 else (22.0 / 7.0 * diameter) * (angle / 360.0) NEW_LINE DEDENT
+def breakSum(n): NEW_LINE INDENT return n if (n == 0 or n == 1) else max(breakSum(n // 2) + breakSum(n // 3) + breakSum(n // 4), n) NEW_LINE DEDENT NEW_LINE
+def isDivBy9(n): NEW_LINE INDENT return True if (n == 0 or n == 9) else False if (n < 9) else isDivBy9((n >> 3) - (n & 7)) NEW_LINE DEDENT NEW_LINE
+def isDivisible(str, k): NEW_LINE INDENT return sum(1 for i in range(k) if str[len(str) - i - 1] == '0') == k NEW_LINE DEDENT NEW_LINE
+def findSum(n): NEW_LINE INDENT return (n - 1) * n // 2 + (n - 1) * n * (2 * (n - 1) + 1) // 6 NEW_LINE DEDENT NEW_LINE
+def findNth(n): NEW_LINE INDENT return 19 + (n - 1) * 9 + 9 * (int(log10(19 + (n - 1) * 9)) - 1) NEW_LINE DEDENT NEW_LINE
+def decimalToBinary(N): NEW_LINE INDENT return int(bin(N)[2:]) NEW_LINE DEDENT NEW_LINE
+def first(str, i=0): NEW_LINE INDENT return 0 if str[i] == '\0' else str[i] if str[i].isupper() else first(str, i+1) NEW_LINE DEDENT NEW_LINE
+def lexSmallest(a): NEW_LINE INDENT return ''.join(sorted(a)) NEW_LINE DEDENT
+def countSubStr(str): NEW_LINE INDENT return sum(1 for c in str if c == '1') * (sum(1 for c in str if c == '1') - 1) // 2 NEW_LINE DEDENT NEW_LINE
+def remainder(str): NEW_LINE INDENT return sum((int(str[i]) - '0' + 10 * (sum((int(str[j]) - '0') * 10 ** (i - j - 1) for j in range(i)) % 11)) % 11 for i in range(len(str))) % 11 NEW_LINE DEDENT
+def findRotations(str): NEW_LINE INDENT return next((i for i in range(1, len(str) + 1) if str == (str + str)[i:i+len(str)]), len(str)) NEW_LINE DEDENT
+def randomize(arr): NEW_LINE INDENT from random import randint NEW_LINE for i in range(len(arr)-1, 0, -1): NEW_LINE INDENT j = randint(0, i) NEW_LINE arr[i], arr[j] = arr[j], arr[i] NEW_LINE DEDENT DEDENT
+def gcd(a, b): NEW_LINE INDENT return gcd(b, a) if a < b else a if fabs(b) < 0.001 else gcd(b, a - floor(a / b) * b) NEW_LINE DEDENT
+def countNonDecreasing(n): NEW_LINE INDENT return functools.reduce(lambda x, i: (x[0] * (10 + i - 1) // i, i + 1), range(1, n + 1), (1, 1))[0] NEW_LINE DEDENT NEW_LINE
+def countRect(n): NEW_LINE INDENT return sum(1 for length in range(1, int(n**0.5) + 1) for height in range(length, n // length + 1)) NEW_LINE DEDENT NEW_LINE
+def canMakeAllSame(str): NEW_LINE INDENT return sum(ch == '0' for ch in str) in (1, len(str) - 1) NEW_LINE DEDENT
+def fib(n): NEW_LINE INDENT return lookup[n] if lookup[n] != NIL else (lookup.update({n: n}) or lookup[n]) if n <= 1 else (lookup.update({n: fib(n - 1) + fib(n - 2)}) or lookup[n]) NEW_LINE DEDENT NEW_LINE
+def selectRandom(x): NEW_LINE INDENT static_res = []; static_count = [0]; static_count[0] += 1; if static_count[0] == 1: static_res.append(x) NEW_LINE else: NEW_LINE INDENT from random import randrange; i = randrange(static_count[0]); if i == static_count[0] - 1: static_res[0] = x NEW_LINE DEDENT return static_res[0] NEW_LINE DEDENT
+def transpose(A): NEW_LINE INDENT return [[A[j][i] for j in range(len(A))] for i in range(len(A[0]))] NEW_LINE DEDENT NEW_LINE
+def printSquares(n): NEW_LINE INDENT for x in range(n): square = (square + x + prev_x); print(square, " ▁ ", end=""); prev_x = x NEW_LINE DEDENT NEW_LINE
+def firstFactorialDivisibleNumber(x): NEW_LINE INDENT return next((i for i in range(1, x) if (lambda f: all(f := f * j or f for j in range(1, i)) and f % x == 0)(1)), x) NEW_LINE DEDENT NEW_LINE
+def getInvCount(arr, n): NEW_LINE INDENT return sum(1 for i in range(n) for j in range(i + 1, n) if arr[i] > arr[j]) NEW_LINE DEDENT NEW_LINE
+def countPairs(arr, n): NEW_LINE INDENT return sum(1 for i in range(n) for j in range(i+1, n) if arr[i] == arr[j]) NEW_LINE DEDENT NEW_LINE
+def recursiveReverse(str, i=0): NEW_LINE INDENT if i == len(str) // 2: return NEW_LINE str[i], str[len(str) - i - 1] = str[len(str) - i - 1], str[i] NEW_LINE recursiveReverse(str, i + 1) NEW_LINE DEDENT NEW_LINE
+def countInRange(arr, n, x, y): NEW_LINE INDENT return sum(1 for i in range(n) if x <= arr[i] <= y) NEW_LINE DEDENT
+def isOverflow(a, b): NEW_LINE INDENT return False if (a == 0 or b == 0) else True if a != (a * b) / b else False NEW_LINE DEDENT
+def checkcircle(r, R, r1, x1, y1): NEW_LINE INDENT return sqrt(x1 * x1 + y1 * y1) - r1 >= R and sqrt(x1 * x1 + y1 * y1) + r1 <= r NEW_LINE DEDENT
+def octalToDecimal(n): NEW_LINE INDENT return sum(int(last_digit) * (8 ** i) for i, last_digit in enumerate(str(n)[::-1])) NEW_LINE DEDENT
+def isSymmetric(mat, N): NEW_LINE INDENT return all(mat[i][j] == mat[j][i] for i in range(N) for j in range(N)) NEW_LINE DEDENT
+def shuffle(card, n): NEW_LINE INDENT from random import randrange; from time import time; import random; random.seed(time()); [card[i], card[randrange(i, 52)] for i in range(n)] NEW_LINE DEDENT NEW_LINE
+def minRevolutions(r, x1, y1, x2, y2):NEW_LINE INDENT return ceil(sqrt((x1 - x2)**2 + (y1 - y2)**2) / (2 * r))NEW_LINE DEDENT
+def countCommon(mat, n): NEW_LINE INDENT return sum(1 for i in range(n) if mat[i][i] == mat[i][n-i-1]) NEW_LINE DEDENT NEW_LINE
+def isPrime(n, i=2): NEW_LINE INDENT return True if (n <= 2 and n == 2) or (n % i != 0 and (i * i > n or isPrime(n, i + 1))) else False NEW_LINE DEDENT
+def maxProd(n): NEW_LINE INDENT return n-1 if (n==2 or n==3) else (n*res) for res in [1] while (n:=n-3)>4 if res:=res*3 else (n*res) NEW_LINE DEDENT NEW_LINE
+def minTime(arr, n, m): NEW_LINE INDENT return next(t for t in range(sum(m//x for x in arr)) if sum(t//x for x in arr) >= m) NEW_LINE DEDENT NEW_LINE
+def isPossibleTriangle(arr): NEW_LINE INDENT return False if len(arr) < 3 else any(arr[i] + arr[i+1] > arr[i+2] for i in range(len(arr) - 2) after arr.sort()) NEW_LINE DEDENT NEW_LINE
+def middleOfThree(a, b, c): NEW_LINE INDENT return b if (a - b) * (b - c) > 0 else c if (a - b) * (a - c) > 0 else a NEW_LINE DEDENT NEW_LINE
+def findRepeating(arr, n): NEW_LINE INDENT return next((x for x in arr if arr.count(x) > 1), -1) NEW_LINE DEDENT NEW_LINE
+def maxArea(a, b, c, d): NEW_LINE INDENT return (lambda s=(a+b+c+d)/2: (s-a)*(s-b)*(s-c)*(s-d)**0.5)() NEW_LINE DEDENT NEW_LINE
+def findDigits(n): NEW_LINE INDENT return 0 if n < 0 else 1 if n <= 1 else int(sum(math.log10(i) for i in range(2, n + 1)) + 1) NEW_LINE DEDENT NEW_LINE
+def isInorder(arr, n): NEW_LINE INDENT return True if n == 0 or n == 1 else all(arr[i - 1] <= arr[i] for i in range(1, n)) NEW_LINE DEDENT
+def isMajority(a): NEW_LINE INDENT return any(a.count(x) >= len(a) / 2 for x in set(a)) NEW_LINE DEDENT
+def findStep(n): NEW_LINE INDENT return 1 if n == 0 or n == 1 else 2 if n == 2 else findStep(n - 3) + findStep(n - 2) + findStep(n - 1) NEW_LINE DEDENT
+def findPosition(k, n): NEW_LINE INDENT return next(n*i for i in range(2, MAX+1) if (f2:=f1:=0)|(f2:=1)|any((f2:=f1+f2, f1:=f2-f1)[-1] % k == 0 and not i for _ in range(2, i)) NEW_LINE DEDENT NEW_LINE
+def minimum_cost(a: list, n: int) -> int: NEW_LINE INDENT return min(a) * (sum(a) - min(a)) NEW_LINE DEDENT
+def kthdigit(a, b, k): NEW_LINE INDENT return next((rem for i, rem in enumerate(reversed(str(a**b))) if i == k-1), 0) NEW_LINE DEDENT NEW_LINE
+def numberOfWays(x): NEW_LINE INDENT return [1, 1] + [dp.append(dp[i-1] + (i-1) * dp[i-2]) for i in range(2, x+1) if dp := [1, 1]] and dp[x] NEW_LINE DEDENT
+def sumNodes(l): NEW_LINE INDENT return (pow(2, l-1) * (pow(2, l-1) + 1) // 2) * l NEW_LINE DEDENT
+def leonardo(n): NEW_LINE INDENT return [1 if i < 2 else dp[i-1] + dp[i-2] + 1 for dp in [[1, 1]+[0]*(n-1)] for i in range(2, n+1)][-1] NEW_LINE DEDENT
+def add(A, B, C): NEW_LINE INDENT for i in range(N): for j in range(N): C[i][j] = A[i][j] + B[i][j] NEW_LINE DEDENT NEW_LINE
+def arraySortedOrNot(arr, n): NEW_LINE INDENT return True if (n == 0 or n == 1) else all(arr[i - 1] <= arr[i] for i in range(1, n)) NEW_LINE DEDENT NEW_LINE
+def findSum(n): NEW_LINE INDENT return sum((n * (n + 1) / 2 - (i - 1)) * i for i in range(2, n + 1)) + (n * (n + 1) / 2) NEW_LINE DEDENT NEW_LINE
+def isCornerPresent(str, corner): NEW_LINE INDENT return False if len(str) < len(corner) else (str[:len(corner)] == corner and str[-len(corner):] == corner) NEW_LINE DEDENT NEW_LINE
+def isDiagonalMatrix(mat): NEW_LINE INDENT return all(mat[i][j] == 0 for i in range(len(mat)) for j in range(len(mat)) if i != j) NEW_LINE DEDENT
+def minimumflip(mat, n): NEW_LINE INDENT return sum(1 for i in range(n) for j in range(i) if mat[i][j] != mat[j][i]) NEW_LINE DEDENT NEW_LINE
+def findIndex(n): NEW_LINE INDENT return n if (n <= 1) else findIndex(n - 1) + findIndex(n - 2) NEW_LINE DEDENT NEW_LINE
+def constructArr(arr, pair, n): NEW_LINE INDENT arr[0] = (pair[0] + pair[1] - pair[n - 1]) // 2; [arr.__setitem__(i, pair[i - 1] - arr[0]) for i in range(1, n)] NEW_LINE DEDENT NEW_LINE
+def checkMarkov(m): NEW_LINE INDENT return all(sum(row) == 1 for row in m) NEW_LINE DEDENT
+def findMod(a, b): NEW_LINE INDENT return -((mod := a - b * int(a / b)) if a < 0 else mod) if a < 0 else mod if b >= 0 else -mod NEW_LINE DEDENT
+def recursive_reverse(s): NEW_LINE INDENT return ''.join(reversed(s)) NEW_LINE DEDENT NEW_LINE
+def multiply(A, B, C): NEW_LINE INDENT return [[A[i][j] - B[i][j] for j in range(N)] for i in range(N)] NEW_LINE DEDENT NEW_LINE
+def minValue(A, B, n): NEW_LINE INDENT return sum(A[i] * B[n-i-1] for i in range(n)) if (A.sort() or B.sort() or True) else None NEW_LINE DEDENT NEW_LINE
+def decToBin(n): NEW_LINE INDENT return "0" if n == 0 else decToBin(n >> 1) + ('0' if (n & 1) == 0 else '1') NEW_LINE DEDENT NEW_LINE
+def rotateMatrix(mat): NEW_LINE INDENT return print('\n'.join(' '.join(str(mat[i][j]) for j in range(len(mat)-1, -1, -1)) for i in range(len(mat)-1, -1, -1))) NEW_LINE DEDENT NEW_LINE
+def russianPeasant(a, b): NEW_LINE INDENT return 0 if b == 0 else (russianPeasant(a << 1, b >> 1) + a if b & 1 else russianPeasant(a << 1, b >> 1)) NEW_LINE DEDENT NEW_LINE
+def splitArr(arr, n, k): NEW_LINE INDENT arr[:] = arr[k % n:] + arr[:k % n] NEW_LINE DEDENT
+def CountPairs(n): NEW_LINE INDENT return sum([k * (n // k - i + 1) for i in range(1, n + 1) if (k := n // i) and not (i := n // k + 1)]) NEW_LINE DEDENT
+def lastPosition ( n , m , k ) : NEW_LINE INDENT return m + k - 1 if ( m <= n - k + 1 ) else n if ( ( m := m - ( n - k + 1 ) ) % n == 0 ) else m % n NEW_LINE DEDENT NEW_LINE
+def minimumSquare(a, b): NEW_LINE INDENT return sum((a // b, a if (a, b) := (b, a % b))[0] for _ in iter(lambda: b > 0, False)) NEW_LINE DEDENT NEW_LINE
+def printFibonacciNumbers(n): NEW_LINE INDENT if n < 1: return NEW_LINE for i in range(1, n+1): NEW_LINE INDENT print(f2, end=" ▁ ") NEW_LINE next = f1 + f2 NEW_LINE f1, f2 = f2, next NEW_LINE DEDENT NEW_LINE DEDENT
+def minLexRotation(str): NEW_LINE INDENT return sorted(str[i:] + str[:i] for i in range(len(str)))[0] NEW_LINE DEDENT NEW_LINE
+def search(arr, n, x): NEW_LINE INDENT return next((i for i in range(n) if arr[i] == x), -1) NEW_LINE DEDENT
+def findHeight(parent, n): NEW_LINE INDENT return max((lambda p, current=1: current if parent[p] == -1 else 1 + (lambda p=parent[p]: lambda k, v: k(v))(lambda q: q(q), lambda k, v=p: k(k, v)))(i) for i in range(n)) NEW_LINE DEDENT
+def maxPrefix(s, t): NEW_LINE INDENT return sum(1 for i in range(min(len(s), len(t))) if s[i] == t[i]) NEW_LINE DEDENT
+def findMaximum(arr, low, high): NEW_LINE INDENT return max(arr[low:high+1]) NEW_LINE DEDENT NEW_LINE
+def findSum(str): NEW_LINE INDENT return sum(int(temp) for temp in ''.join((ch if ch.isdigit() else ' ') for ch in str).split()) NEW_LINE DEDENT NEW_LINE
+def mirrorImage(a, b, c, x1, y1): NEW_LINE INDENT return (lambda temp: (temp * a + x1, temp * b + y1))(-2 * (a * x1 + b * y1 + c) / (a**2 + b**2)) NEW_LINE DEDENT
+def moduloMultiplication(a, b, mod): NEW_LINE INDENT return sum((a << i) % mod for i in range(b.bit_length()) if b >> i & 1) % mod NEW_LINE DEDENT
+def subset(arr): NEW_LINE INDENT return max([arr.count(i) for i in set(arr)]) NEW_LINE DEDENT
+def findMinDiff(arr): NEW_LINE INDENT return min(arr[i+1] - arr[i] for i in range(len(arr)-1)) if arr.sort() or True else None NEW_LINE DEDENT NEW_LINE
+def countSquares(a, b): NEW_LINE INDENT return sum(1 for i in range(a, b+1) if any(j*j == i for j in range(1, int(i**0.5)+1))) NEW_LINE DEDENT
+def count_of_ways(n): NEW_LINE INDENT return sum(1 for i in range(n+1) for j in range(n+1) for k in range(n+1) if i+j+k == n) NEW_LINE DEDENT NEW_LINE
+def countFriendsPairings(n): NEW_LINE INDENT return n if n <= 2 else [b := 2, a := 1, [c := b + (i - 1) * a, a := b, b := c] for i in range(3, n + 1)][-1][-1] NEW_LINE DEDENT NEW_LINE
+def exponentiation(base, exp): NEW_LINE INDENT return 1 if exp == 0 else (exponentiation(base, exp // 2) ** 2 * base if exp % 2 else exponentiation(base, exp // 2) ** 2) % N NEW_LINE DEDENT NEW_LINE
+def countSolutions(n): NEW_LINE INDENT return sum(1 for x in range(n) if x*x < n for y in range(n) if x*x + y*y < n) NEW_LINE DEDENT
+def maximizecube(l, b, h): NEW_LINE INDENT print(f"{gcd(l, gcd(b, h))} ▁ {l // gcd(l, gcd(b, h)) * b // gcd(l, gcd(b, h)) * h // gcd(l, gcd(b, h))}") NEW_LINE DEDENT NEW_LINE
+def minXOR(arr): NEW_LINE INDENT return min(arr[i] ^ arr[j] for i in range(len(arr)) for j in range(i + 1, len(arr))) NEW_LINE DEDENT NEW_LINE
+def maxProduct(arr): NEW_LINE INDENT return -1 if len(arr) < 3 else max(arr[0] * arr[1] * arr[-1], arr[-1] * arr[-2] * arr[-3]) NEW_LINE DEDENT
+def isDivisibleBy7(num): NEW_LINE INDENT return isDivisibleBy7(-num) if num < 0 else 1 if num == 0 or num == 7 else 0 if num < 10 else isDivisibleBy7(num // 10 - 2 * (num % 10)) NEW_LINE DEDENT NEW_LINE
+def eulerian(n, m): NEW_LINE INDENT return 0 if (m >= n or n == 0) else 1 if (m == 0) else (n - m) * eulerian(n - 1, m - 1) + (m + 1) * eulerian(n - 1, m) NEW_LINE DEDENT NEW_LINE
+def recSearch(arr, l, r, x): NEW_LINE INDENT return -1 if r < l else l if arr[l] == x else r if arr[r] == x else recSearch(arr, l + 1, r - 1, x) NEW_LINE DEDENT
+def numofsubset(arr): NEW_LINE INDENT return len(set(arr)) + sum(1 for i in range(len(arr)-1) if sorted(arr)[i] + 1 != sorted(arr)[i+1]) NEW_LINE DEDENT
+def binaryToDecimal(n) : NEW_LINE INDENT return sum(int(n[i]) * 2**(len(n)-1-i) for i in range(len(n))) NEW_LINE DEDENT
+def countSubstringWithEqualEnds(s): NEW_LINE INDENT return sum(1 for i in range(len(s)) for j in range(i, len(s)) if s[i] == s[j]) NEW_LINE DEDENT
+def binarySearch(arr, l, r, x): NEW_LINE INDENT return l + (r - l) // 2 if arr[l + (r - l) // 2] == x else binarySearch(arr, l, l + (r - l) // 2 - 1, x) if arr[l + (r - l) // 2] > x else binarySearch(arr, l + (r - l) // 2 + 1, r, x) if l <= r else -1 NEW_LINE DEDENT NEW_LINE
+def decToBinary(n): NEW_LINE INDENT return ''.join(str(n % 2) for i in range(32) if (n := n // 2) or i == 0)[::-1] NEW_LINE DEDENT
+def mulmod(a, b, mod): NEW_LINE INDENT return (0 if b == 0 else (mulmod(a, b // 2, mod) * 2 + a if b % 2 else mulmod(a, b // 2, mod) * 2) % mod) NEW_LINE DEDENT NEW_LINE
+def firstNonRepeating(arr): NEW_LINE INDENT return next((x for x in arr if arr.count(x) == 1), -1) NEW_LINE DEDENT
+def middleOfThree(a, b, c): NEW_LINE INDENT return b if (a < b and b < c) or (c < b and b < a) else a if (b < a and a < c) or (c < a and a < b) else c NEW_LINE DEDENT NEW_LINE
+def multiply(x, y): NEW_LINE INDENT return 0 if y == 0 else (x + multiply(x, y-1)) if y > 0 else -multiply(x, -y) NEW_LINE DEDENT NEW_LINE
+def to_upper(in_str): NEW_LINE INDENT return ''.join(chr(ord(char) - 32) if 'a' <= char <= 'z' else char for char in in_str) NEW_LINE DEDENT NEW_LINE
+def findMinSum(a, b, n): NEW_LINE INDENT return sum(abs(a[i] - b[i]) for i in range(n)) NEW_LINE DEDENT
+def checkCount(arr, n, k): NEW_LINE INDENT return all(value <= 2 * k for value in {key: arr.count(key) for key in arr}.values()) NEW_LINE DEDENT NEW_LINE
+def nonFibonacci(n): NEW_LINE INDENT return prev + n + (curr - prev - 1) if (n := n - (curr - prev - 1), curr := prev + (prev := prevPrev + (prevPrev := curr)))[0] <= 0 else nonFibonacci(n) NEW_LINE DEDENT NEW_LINE
+def minXOR(arr): NEW_LINE INDENT return min(arr[i] ^ arr[i+1] for i in range(len(arr)-1)) NEW_LINE DEDENT
+def isPowerOfFour(n): NEW_LINE INDENT return 1 if n != 0 and (n & (n - 1)) == 0 and (bin(n).count('1') % 2 == 1) else 0 NEW_LINE DEDENT NEW_LINE
+def firstNonRepeating(arr, n): NEW_LINE INDENT return next((arr[i] for i in range(n) if all(arr[i] != arr[j] for j in range(n) if i != j)), -1) NEW_LINE DEDENT NEW_LINE
+def power(x, y, p): NEW_LINE INDENT return 1 if y == 0 else (power(x, y >> 1, p)**2 * x if y & 1 else power(x, y >> 1, p)**2) % p NEW_LINE DEDENT NEW_LINE
+def isPossible(a, b, n, k): NEW_LINE INDENT return all(x + y >= k for x, y in zip(sorted(a), sorted(b, reverse=True))) NEW_LINE DEDENT NEW_LINE
+def printDistinct(arr): NEW_LINE INDENT return [print(x, end=" ▁ ") for x in set(arr)] NEW_LINE DEDENT
+def countSeq(n): NEW_LINE INDENT return sum((lambda nCr=[1]: [nCr.append(nCr[-1] * (n + 1 - r) // r) or nCr[-1]**2 for r in range(1, n+1)])([]) or sum(nCr)) NEW_LINE DEDENT
+def countNegative(M, n, m): NEW_LINE INDENT return sum(1 for i in range(n) for j in range(m) if M[i][j] < 0) NEW_LINE DEDENT NEW_LINE
+def isPrime(p): NEW_LINE INDENT return (lambda checkNumber: (lambda nextval: (nextval == 0))(reduce(lambda x, _: (x * x - 2) % checkNumber, range(p - 2), 4 % checkNumber)))(2 ** p - 1) NEW_LINE DEDENT NEW_LINE
+def minPerimeter(n): NEW_LINE INDENT return 4 * int(n**0.5) if int(n**0.5)**2 == n else 2 * (int(n**0.5) + n // int(n**0.5)) + 2 if n % int(n**0.5) != 0 else 2 * (int(n**0.5) + n // int(n**0.5)) NEW_LINE DEDENT NEW_LINE
+def sequence(n): NEW_LINE INDENT return (lambda f: f[n])([0, 1, 1] + [((lambda f, i: f.extend([f[f[i-1]] + f[i-f[i-1]]]) or f[i])(f, i) for i in range(3, n+1) for f in ([0, 1, 1] + [0]*(n-2))][-1 if n > 2 else n:]) if n > 2 else [0, 1, 1][n]) NEW_LINE DEDENT NEW_LINE
+def countIntegralSolutions(n): NEW_LINE INDENT return sum(1 for i in range(n+1) for j in range(n+1-i) for k in range(n+1-i-j) if i+j+k==n) NEW_LINE DEDENT
+def maxGameByWinner(N): NEW_LINE INDENT return (lambda dp=[1,2] + [0]*(N-1): [(dp.append(dp[i-1] + dp[i-2]), i)[1] for i in range(2, N) if dp[i-1] + dp[i-2] <= N][-1])() NEW_LINE DEDENT NEW_LINE
+def numberOfPaths(m, n): NEW_LINE INDENT return [1]+[0]*(n-1) if m == 0 or n == 0 else [sum(dp[j] if j == 0 else dp[j] + dp[j-1] for j in range(n)) for i in range(m) for dp in [[1] + [0] * (n-1)]][0][-1] NEW_LINE DEDENT NEW_LINE
+def minOperation(arr): NEW_LINE INDENT return len(arr) - max([arr.count(x) for x in set(arr)]) NEW_LINE DEDENT
+def bubbleSort(arr): NEW_LINE INDENT return [arr.sort()] if any(arr[j] > arr[j + 1] for i in range(len(arr) - 1) for j in range(len(arr) - i - 1)) else arr NEW_LINE DEDENT NEW_LINE
+def findCombinations(str, index, out): NEW_LINE INDENT if index == len(str): print(out) NEW_LINE for i in range(index, len(str)): findCombinations(str, i + 1, out + " ( " + str[index:i + 1] + " ) ") NEW_LINE DEDENT
+def countDivisibles(arr, n): NEW_LINE INDENT return sum(1 for i in range(n) for j in range(i + 1, n) if arr[i] % arr[j] == 0 or arr[j] % arr[i] == 0) NEW_LINE DEDENT NEW_LINE
+def maxTasks(high, low, n): NEW_LINE INDENT return 0 if n <= 0 else max(high[n-1] + maxTasks(high, low, n-2), low[n-1] + maxTasks(high, low, n-1)) NEW_LINE DEDENT NEW_LINE
+def printDistinct(arr): NEW_LINE INDENT return [print(x, end=' ▁ ') for i, x in enumerate(arr) if x not in arr[:i]] NEW_LINE DEDENT NEW_LINE
+def findElements(arr, n): NEW_LINE INDENT return [print(arr[i], end=' ▁ ') for i in range(n) if sum(1 for j in range(n) if arr[j] > arr[i]) >= 2] NEW_LINE DEDENT NEW_LINE
+def nearestSmallerEqFib(n): NEW_LINE INDENT return n if (n == 0 or n == 1) else (lambda f1, f2, f3: f2 if f3 > n else [f1 := f2, f2 := f3, f3 := f1 + f2, f2][-1] for _ in iter(int, 1))(0, 1, 1) NEW_LINE DEDENT NEW_LINE
+def findMinDiff(arr, n): NEW_LINE INDENT return min(abs(arr[i] - arr[j]) for i in range(n) for j in range(i + 1, n)) NEW_LINE DEDENT NEW_LINE
+def subArray(arr, n): NEW_LINE INDENT for i in range(n): NEW_LINE INDENT for j in range(i, n): NEW_LINE INDENT for k in range(i, j + 1): NEW_LINE INDENT print(arr[k], end=" ▁ ") NEW_LINE DEDENT print() NEW_LINE DEDENT DEDENT DEDENT DEDENT
+def distancesum(x, y, n): NEW_LINE INDENT return sum(abs(x[i] - x[j]) + abs(y[i] - y[j]) for i in range(n) for j in range(i + 1, n)) NEW_LINE DEDENT NEW_LINE
+def countWays(n): NEW_LINE INDENT table = [0] * (n + 1); table[0] = 1; [_ for i in range(1, n) for j in range(i, n + 1, 1) if (table.__setitem__(j, table[j] + table[j - i]))]; return table[n] NEW_LINE DEDENT NEW_LINE
+def maxSubarrayXOR(arr, n): NEW_LINE INDENT return max(functools.reduce(lambda x, y: x ^ y, arr[i:j+1], 0) for i in range(n) for j in range(i, n)) NEW_LINE DEDENT
+def isIdentity(mat, N): NEW_LINE INDENT return all((mat[row][col] == 1 if row == col else mat[row][col] == 0) for row in range(N) for col in range(N)) NEW_LINE DEDENT NEW_LINE
+def insertSorted(arr, n, key, capacity): NEW_LINE INDENT return n if (n >= capacity) else (arr.__setitem__(i + 1, arr[i]) for i in range(n - 1, -1, -1) if arr[i] > key), arr.__setitem__(i + 1, key) or (n + 1) NEW_LINE DEDENT NEW_LINE
+def solve(arr): NEW_LINE INDENT return sum(((a if i % 2 else b) * 10 + arr[i] for i, (a, b) in enumerate(zip([0] * len(arr), arr))), 0) NEW_LINE DEDENT
+def findSum(A, B, n): NEW_LINE INDENT return sum(x for x, count in {key: A.count(key) + B.count(key) for key in set(A + B)}.items() if count == 1) NEW_LINE DEDENT NEW_LINE
+def maxLen(arr, n): NEW_LINE INDENT return max((max(max_len, j - i + 1) for j in range(i, n) if (curr_sum := sum(arr[i:j+1])) == 0), default=0) NEW_LINE DEDENT NEW_LINE
+def minRadius(k, x, y, n): NEW_LINE INDENT return sorted([x[i] * x[i] + y[i] * y[i] for i in range(n)])[k - 1] NEW_LINE DEDENT NEW_LINE
+def generate(ones, zeroes, str, len): NEW_LINE INDENT if len == len(str): NEW_LINE INDENT print(str, end=" ▁ ▁ ") NEW_LINE return NEW_LINE DEDENT generate(ones + 1, zeroes, str + "1", len) NEW_LINE if ones > zeroes: NEW_LINE INDENT generate(ones, zeroes + 1, str + "0", len) NEW_LINE DEDENT DEDENT
+def search(arr, n, x): NEW_LINE INDENT return next((i for i in range(n) if arr[i] == x), -1) NEW_LINE DEDENT
+def search(arr, n, x, k): NEW_LINE INDENT return next((i for i in range(n) if arr[i] == x), -1) NEW_LINE DEDENT
+def countPairsWithDiffK(arr, n, k): NEW_LINE INDENT return sum(1 for i in range(n) for j in range(i + 1, n) if abs(arr[i] - arr[j]) == k) NEW_LINE DEDENT NEW_LINE
+def countNegative(M, n, m): NEW_LINE INDENT return sum(j + 1 for i in range(n) for j in range(m-1, -1, -1) if M[i][j] < 0 and not any(M[i][k] >= 0 for k in range(j, m))) NEW_LINE DEDENT NEW_LINE
+def findMinX(num, rem, k): NEW_LINE INDENT while True: NEW_LINE INDENT x = 1 NEW_LINE while True: NEW_LINE INDENT for j in range(k): NEW_LINE INDENT if x % num[j] != rem[j]: NEW_LINE INDENT break NEW_LINE DEDENT NEW_LINE DEDENT if j == k: NEW_LINE INDENT return x NEW_LINE DEDENT x += 1 NEW_LINE DEDENT NEW_LINE DEDENT NEW_LINE DEDENT
+def removeDuplicates(S): NEW_LINE INDENT S[:] = ''.join(dict.fromkeys(S)) NEW_LINE DEDENT
+def distributingBalls(k, n, str): NEW_LINE INDENT return all(str.count(char) <= k for char in set(str)) NEW_LINE DEDENT
+def insertionSortRecursive(arr, n): NEW_LINE INDENT return None if n <= 1 else (insertionSortRecursive(arr, n-1), last := arr[n-1], j := n-2, [arr.__setitem__(j+1, arr[j]) for j in range(n-2, -1, -1) if arr[j] > last].__len__(), arr.__setitem__(j+1, last))[-1] NEW_LINE DEDENT NEW_LINE
+def areEqual(arr1, arr2, n, m): NEW_LINE INDENT return False if n != m or sorted(arr1) != sorted(arr2) else True NEW_LINE DEDENT NEW_LINE
+def getOddOccurrence(arr): NEW_LINE INDENT return next((x for x in arr if arr.count(x) % 2 != 0), -1) NEW_LINE DEDENT NEW_LINE
+def checkIsAP(arr): NEW_LINE INDENT return len(arr) == 1 or (sorted(arr) and all(arr[i] - arr[i - 1] == arr[1] - arr[0] for i in range(2, len(arr)))) NEW_LINE DEDENT
+def minOps(arr, n, k): NEW_LINE INDENT return -1 if any((max(arr) - x) % k != 0 for x in arr) else sum((max(arr) - x) // k for x in arr) NEW_LINE DEDENT NEW_LINE

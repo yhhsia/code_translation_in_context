@@ -1,0 +1,328 @@
+float areaSquare(float side) { return side * side; }
+int intersection(int n) { return n * (n - 1); }
+int fun(int n) { return n & (n - 1); }
+int cassini(int n) { return n & 1 ? -1 : 1; }
+int hexagonalNum(int n) { return n * (2 * n - 1); }
+int addOne(int x) { return -(~x); }
+double circumference(double r) { return 2 * 3.14159 * r; }
+double find_Area(double r) { return 2 * r * r; }
+bool check(int n) { return 1162261467 % n == 0; }
+void mergeTwoHalf(vector<int>& A, int n) { sort(A.begin(), A.end()); }
+bool isEven(int n) { return n % 2 == 0; }
+int largest(int arr[], int n) { return *max_element(arr, arr + n); }
+#include <cmath> int height(int N) { return static_cast<int>(std::ceil(std::log2(N + 1)) - 1); }
+int numberOfSticks(int x) { return (3 * x * (x + 1)) / 2; }
+double summingSeries(int n) { return pow(n, 2); }
+int pentagonalNum(int n) { return (3 * n * n - n) / 2; }
+bool isEven(int n) { return !(n & 1); }
+int binomialCoeffSum(int n) { return (1 << n); }
+int rangeGCD(int n, int m) { return n == m ? n : 1; }
+int power(int n) { if (n == 1) return 2; return 2 * power(n - 1); }
+int compute_average(int a, int b) { return (a + b) / 2; }
+float Circumference(float a) { return 4 * a; }
+double multiplyWith3Point5(int x) { return (x << 1) + x + (x >> 1); }
+double slope(int x1, int y1, int x2, int y2) { return static_cast<double>(y2 - y1) / (x2 - x1); }
+int factorial(int n) { return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); }
+bool oppositeSigns(int x, int y) { return (x ^ y) < 0; }
+unsigned char swapNibbles(unsigned char x) { return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); }
+int countNonEmptySubstr(std::string str) { int n = str.length(); return n * (n + 1) / 2; }
+int getModulo(int n, int d) { return n & (d - 1); }
+int nthTerm(int n) { return (n*n) + (n*n*n); }
+bool isMultipleOf10(int n) { return n % 15 == 0; }
+int factorial(int n) { return (n == 1 || n == 0) ? 1 : n * factorial(n - 1); }
+int count_of_ways(int n) { int count = 0; count = (n + 1) * (n + 2) / 2; return count; }
+int gcd(int a, int b) { if (a == 0) return b; return gcd(b % a, a); }
+int rectCount(int n, int m) { return (m * n * (n + 1) * (m + 1)) / 4; }
+double volumeOfEllipsoid(double r1, double r2, double r3) { return 1.33 * 3.14159 * r1 * r2 * r3; }
+int getRemainder(int num, int divisor) { return num % divisor; }
+int findMaximumPieces(int n) { return 1 + n * (n + 1) / 2; }
+int evenbinomialCoeffSum(int n) { return (1 << (n - 1)); }
+int maximum; int lis(vector<int> &arr) { int n = arr.size(); maximum = 1; _lis(arr, n); return maximum; }
+double areaOctagon(double side) { return 2 * (1 + sqrt(2)) * side * side; }
+double surface_area_octahedron(double side) { return 2 * sqrt(3) * side * side; }
+void sortit(int arr[], int n) { for(int i = 0; i < n; i++) arr[i] = i + 1; }
+int findSum(int n) { return n * (n + 1) * (n + 2) * (3 * n + 1) / 24; }
+double vol_of_octahedron(double side) { return (side * side * side) * (sqrt(2) / 3); }
+int Resources(int process, int need) { return process * (need - 1) + 1; }
+double procal(double n) { return (3.0 * n) / (4.0 * n * n - 1); }
+int cost(const vector<int>& a, int n) { return (n - 1) * *min_element(a.begin(), a.end()); }
+bool isPowerOfTwo(int x) { return x && !(x & (x - 1)); }
+int factorial(int n) { return (n == 0 || n == 1) ? 1 : n * factorial(n - 1); }
+int findRepeating(int arr[], int n) { return accumulate(arr, arr + n, 0) - ((n - 1) * n / 2); }
+std::string reverse(const std::string& str) { return std::string(str.rbegin(), str.rend()); }
+int assignValue(int a, int b, int x) { int arr[] = {a, b}; return arr[x]; }
+int countSetBits(int n) { int count = 0; while(n) { n &= (n - 1); count++; } return count; }
+void bin(unsigned int n) { if (n > 1) bin(n >> 1); std::cout << (n & 1) << " "; }
+double sumOfSeries(int n) { return 0.666 * (1 - 1 / pow(10, n)); }
+int calculateSum(int n) { return (1 << n) - 1; }
+int countSetBits(int n) { return n == 0 ? 0 : (n & 1) + countSetBits(n >> 1); }
+int countSetBits(int n) { return n == 0 ? 0 : 1 + countSetBits(n & (n - 1)); }
+int kthSmallest(vector<int>& arr, int k) { sort(arr.begin(), arr.end()); return arr[k-1]; }
+int maximum; int lis(vector<int>& arr) { int n = arr.size(); maximum = 1; _lis(arr, n); return maximum; }
+double getArea(double a) { return (3.14159265358979323846 * a * a) / 4; }
+std::string repeat(std::string s, int n) { std::string s1 = s; for(int i = 1; i < n; ++i) { s += s1; } return s; }
+int yMod(int y, int x) { return y % (1 << x); }
+int minSum(vector<int> &A) { auto min_val = *min_element(A.begin(), A.end()); return min_val * (A.size() - 1); }
+void reverse(const std::string& str) { if (str.length() == 0) return; char temp = str[0]; reverse(str.substr(1)); std::cout << temp; }
+int addOne(int x) { int m = 1; while (x & m) { x = x ^ m; m <<= 1; } x = x ^ m; return x; }
+int search(int arr[], int n, int x) { for(int i = 0; i < n; i++) { if(arr[i] == x) return i; } return -1; }
+int maxSquare(int b, int m) { return (b / m - 1) * (b / m) / 2; }
+bool isNumber(const std::string& s) { for (char c : s) { if (!isdigit(c)) return false; } return true; }
+void printArray(const std::vector<int>& a) { for (auto i : a) std::cout << i << " ▁ "; std::cout << std::endl; }
+double findArea(double a) { return (sqrt(5 * (5 + 2 * sqrt(5))) * a * a) / 4; }
+void printSubStr(const std::string& st, int low, int high) { std::cout << st.substr(low, high - low + 1); }
+int getAbs(int n) { int mask = n >> (sizeof(int) * CHAR_BIT - 1); return ((n + mask) ^ mask); }
+int countStr(int n) { return 1 + (n * 2) + (n * ((n * n) - 1) / 2); }
+int turnOffK(int n, int k) { if (k <= 0) return n; return (n & ~(1 << (k - 1))); }
+int fib(int n) { if (n <= 1) return n; return fib(n - 1) + fib(n - 2); }
+int getOddOccurrence(vector<int> &arr) { int res = 0; for (int element : arr) res ^= element; return res; }
+int CountSquares(int a, int b) { return (int)(floor(sqrt(b)) - ceil(sqrt(a)) + 1); }
+int divisorSum(int n) { int sum = 0; for (int i = 1; i <= n; i++) { sum += (n / i) * i; } return sum; }
+int maxTripletSum(vector<int>& arr) { sort(arr.begin(), arr.end()); return arr[arr.size() - 1] + arr[arr.size() - 2] + arr[arr.size() - 3]; }
+std::string evenlength(const std::string& n) { std::string res = n; for (int j = n.length() - 1; j >= 0; --j) { res += n[j]; } return res; }
+int findSum(int N, int K) { int ans = 0; for(int i = 1; i <= N; ++i) { ans += (i % K); } return ans; }
+bool isPrime(int n) { if (n <= 1) return false; for (int i = 2; i < n; i++) { if (n % i == 0) return false; } return true; }
+bool isPossible(const std::string& str, int n) { return str.length() >= n; }
+void printFun(int test) { if (test < 1) return; else { cout << test << " ▁ "; printFun(test - 1); cout << test << " ▁ "; } }
+int sequence(int n) { if (n == 1 || n == 2) return 1; else return sequence(sequence(n - 1)) + sequence(n - sequence(n - 1)); }
+int nextPowerOf2(int n) { int p = 1; if (n && !(n & (n - 1))) return n; while (p < n) p <<= 1; return p; }
+int leonardo(int n) { if (n == 0 || n == 1) return 1; return leonardo(n - 1) + leonardo(n - 2) + 1; }
+int nextPowerOf2(int n) { n--; n |= n >> 1; n |= n >> 2; n |= n >> 4; n |= n >> 8; n |= n >> 16; n++; return n; }
+double vol_of_dodecahedron(double side) { return ((15 + (7 * sqrt(5))) / 4) * pow(side, 3); }
+int PowerOFPINnfactorial(int n, int p) { int ans = 0; for (int temp = p; temp <= n; temp *= p) ans += n / temp; return ans; }
+int find(int n, int k) { return (n + 1 >= k) ? k - 1 : 2 * n + 1 - k; }
+bool isPowerOfFour(int n) { return n != 0 && (n & (n - 1)) == 0 && !(n & 0xAAAAAAAA); }
+int nswp(int n) { if (n == 0 || n == 1) return 1; return 2 * nswp(n - 1) + nswp(n - 2); }
+int findTrailingZeros(int n) { int count = 0; int i = 5; while (n / i >= 1) { count += n / i; i *= 5; } return count; }
+int getMissingNo(vector<int>& A) { int n = A.size(); int total = (n + 1) * (n + 2) / 2; int sum_of_A = accumulate(A.begin(), A.end(), 0); return total - sum_of_A; }
+int countPaths(int n, int m) { if (n == 0 || m == 0) return 1; return countPaths(n - 1, m) + countPaths(n, m - 1); }
+int largestPower(int n, int p) { int x = 0; while (n) { n /= p; x += n; } return x; }
+bool checkValidity(int a, int b, int c) { return !((a + b <= c) || (a + c <= b) || (b + c <= a)); }
+#include <iostream> void leftRotate(int arr[], int n, int k) { for (int i = k; i < k + n; i++) std::cout << arr[i % n] << " ▁ "; }
+int findLastIndex(const std::string& str, char x) { int index = -1; for (int i = 0; i < str.length(); ++i) { if (str[i] == x) index = i; } return index; }
+int PowerOFPINnfactorial(int n, int p) { int ans = 0, temp = p; while (temp <= n) { ans += n / temp; temp *= p; } return ans; }
+int findLastIndex(const std::string& str, char x) { for (int i = str.length() - 1; i >= 0; i--) { if (str[i] == x) return i; } return -1; }
+void printNos(int n) { if (n > 0) { printNos(n - 1); std::cout << n << " ▁ "; } }
+void findLarger(vector<int> arr, int n) { sort(arr.begin(), arr.end()); for(int i = n/2; i < n; i++) { cout << arr[i] << endl; } }
+void swap(int &xp, int &yp) { xp = xp ^ yp; yp = xp ^ yp; xp = xp ^ yp; }
+void printFactorialNums(int n) { int fact = 1, x = 2; while (fact <= n) { std::cout << fact << " ▁ "; fact *= x; x++; } }
+int getMissingNo(vector<int> a, int n) { int total = 1; for (int i = 2; i <= n + 1; i++) { total += i - a[i - 2]; } return total; }
+int numberOfPaths(int m, int n) { if (m == 1 || n == 1) return 1; return numberOfPaths(m - 1, n) + numberOfPaths(m, n - 1); }
+int count(const std::string& s, char c) { int res = 0; for (int i = 0; i < s.length(); ++i) { if (s[i] == c) res++; } return res; }
+int maxvolume(int s) { int length = s / 3; s -= length; int breadth = s / 2; int height = s - breadth; return length * breadth * height; }
+int horner(int poly[], int n, int x) { int result = poly[0]; for(int i = 1; i < n; i++) result = result * x + poly[i]; return result; }
+int countDigits(int a, int b) { return (a == 0 || b == 0) ? 1 : (int)(floor(log10(abs(a)) + log10(abs(b)))) + 1; }
+bool allCharactersSame(const std::string& s) { for(int i = 1; i < s.size(); ++i) { if(s[i] != s[0]) return false; } return true; }
+bool isPower(int x, int y) { double res1 = log(y) / log(x); return res1 == floor(res1); }
+int modInverse(int a, int m) { a = a % m; for (int x = 1; x < m; x++) { if ((a * x) % m == 1) { return x; } } return 1; }
+int doublefactorial(int n) { int res = 1; for (int i = n; i > 0; i -= 2) { if (i == 0 || i == 1) return res; else res *= i; } return res; }
+void center(int x1, int x2, int y1, int y2) { std::cout << (x1 + x2) / 2 << " , " << (y1 + y2) / 2 << std::endl; }
+#include <iostream> using namespace std; void exponential(int n, double x) { double sum = 1.0; for(int i = n; i > 0; i--) { sum = 1 + x * sum / i; } cout << "e^x = " << sum << endl; }
+int largest(int arr[], int n) { int max = arr[0]; for (int i = 1; i < n; i++) { if (arr[i] > max) max = arr[i]; } return max; }
+unsigned int nextPowerOf2(unsigned int n) { if (n && !(n & (n - 1))) return n; unsigned int count = 0; while (n != 0) { n >>= 1; count++; } return 1 << count; }
+int floorSqrt(int x) { if (x == 0 || x == 1) return x; int i = 1, result = 1; while (result <= x) { i++; result = i * i; } return i - 1; }
+int search(vector<int>& arr, int x) { for(int j = 0; j < arr.size(); j++) { if(x == arr[j]) return j; } return -1; }
+bool isPower(int x, int y) { if (x == 1) return (y == 1); int pow = 1; while (pow < y) pow = pow * x; return (pow == y); }
+int kthgroupsum(int k) { int cur = k * (k - 1) + 1, sum = 0; while (k--) { sum += cur; cur += 2; } return sum; }
+int sumOfSeries(int n) { int sum = 0; for(int i = 1; i <= n; ++i) { sum += (2*i - 1) * (2*i - 1); } return sum; }
+bool divisibleBy20(const std::string& num) { int lastTwoDigits = std::stoi(num.substr(num.length() - 2)); return lastTwoDigits % 20 == 0; }
+double squareRoot(double n) { double x = n, y = 1, e = 0.000001; while (x - y > e) { x = (x + y) / 2; y = n / x; } return x; }
+int findSum(int n) { int sm = 0; for (int i = 1; i <= n; ++i) { for (int j = i; j <= n; ++j) { sm += i * j; } } return sm; }
+void playGame(int arr[], int n) { std::unordered_set<int> s; for (int i = 0; i < n; ++i) s.insert(arr[i]); return s.size() % 2 == 0 ? 1 : 2; }
+bool isDivisible(int n) { while (n >= 100) { int last_digit = n % 10; n /= 10; n += last_digit * 3; } return n % 29 == 0; }
+char first(const std::string& str) { for (int i = 0; i < str.length(); ++i) { if (isupper(str[i])) return str[i]; } return '0'; }
+int find_extra_element_index(vector<int>& arrA, vector<int>& arrB) { int extra_element = accumulate(arrA.begin(), arrA.end(), 0) - accumulate(arrB.begin(), arrB.end(), 0); return find(arrA.begin(), arrA.end(), extra_element) - arrA.begin(); }
+int spiralDiaSum(int n) { if (n == 1) return 1; return (4 * n * n - 6 * n + 6 + spiralDiaSum(n - 2)); }
+void decToBinary(int n) { for (int i = 31; i >= 0; --i) { int k = n >> i; if (k & 1) std::cout << "1 "; else std::cout << "0 "; } }
+int search(int arr[], int n, int x) { for(int i = 0; i < n; i++) { if(arr[i] == x) return i; } return -1; }
+int Right_most_setbit(int num) { int pos = 1; for(int i = 0; i < 32; i++) { if(!(num & (1 << i))) pos++; else break; } return pos; }
+int smallest(int x, int y, int z) { int c = 0; while (x && y && z) { x--; y--; z--; c++; } return c; }
+int countOccurrences(int arr[], int n, int x) { int res = 0; for(int i = 0; i < n; ++i) { if(arr[i] == x) res++; } return res; }
+int getSum(int n) { int sum = 0; while (n != 0) { sum += n % 10; n /= 10; } return sum; }
+int nextPowerOf2(int n) { int p = 1; if (n && !(n & (n - 1))) return n; while (p < n) p <<= 1; return p; }
+int numberOfPaths(int m, int n) { int path = 1; for (int i = n; i < m + n - 1; i++) { path *= i; path /= (i - n + 1); } return path; }
+int nextPowerOf2(int n) { n--; n |= n >> 1; n |= n >> 2; n |= n >> 4; n |= n >> 8; n |= n >> 16; return ++n; }
+int singleNumber(vector<int>& nums) { int sum_of_set = 0, sum_of_nums = 0; unordered_set<int> seen; for (int num : nums) { if (seen.find(num) == seen.end()) { seen.insert(num); sum_of_set += num; } sum_of_nums += num; } return (3 * sum_of_set - sum_of_nums) / 2; }
+void compute(double a, double b) { double AM = (a + b) / 2; double GM = sqrt(a * b); double HM = (GM * GM) / AM; return HM; }
+bool isPerfectSquare(int n) { int i = 1, the_sum = 0; while (the_sum < n) { the_sum += i; if (the_sum == n) return true; i += 2; } return false; }
+int sumBetweenTwoKth(std::vector<int>& arr, int k1, int k2) { std::sort(arr.begin(), arr.end()); int result = 0; for(int i = k1; i < k2 - 1; i++) { result += arr[i]; } return result; }
+void kLargest(std::vector<int>& arr, int k) { std::sort(arr.rbegin(), arr.rend()); for(int i = 0; i < k; ++i) { std::cout << arr[i] << " ▁ "; } }
+int findMinZero(int p) { int first = 1, second = 1, number = 2, next = 1; while (next) { next = (first + second) % p; first = second; second = next; number++; } return number; }
+int catalan(int n) { if (n <= 1) return 1; int res = 0; for(int i = 0; i < n; ++i) res += catalan(i) * catalan(n - i - 1); return res; }
+int findS(int s) { int _sum = 0, n = 1; while (_sum < s) { _sum += n * n; n++; } n--; return (_sum == s) ? n : -1; }
+int evenFib(int n) { if (n < 1) return n; if (n == 1) return 2; return (4 * evenFib(n - 1) + evenFib(n - 2)); }
+bool isTriangular(int num) { if (num < 0) return false; int sum = 0, n = 1; while (sum <= num) { sum += n; if (sum == num) return true; n++; } return false; }
+int check(const std::string& st) { int n = st.length(), digitSum = 0; for (int i = 0; i < n; ++i) digitSum += st[i] - '0'; return digitSum % 9 == 0; }
+void transpose(int A[N][N], int B[N][N]) { for(int i = 0; i < N; ++i) { for(int j = 0; j < N; ++j) { B[i][j] = A[j][i]; } } }
+int fib(int n) { if (n < 6) return n; int t = 5, fn = 5; while (t < n) { fn = round(fn * 1.61803398875); t++; } return fn; }
+bool isPowerOfTwo(int n) { if (n == 0) return false; while (n != 1) { if (n % 2 != 0) return false; n /= 2; } return true; }
+int countDigits(int a, int b) { int count = 0, p = abs(a * b); if (p == 0) return 1; while (p > 0) { count++; p /= 10; } return count; }
+int findExtra(int arr1[], int arr2[], int n) { for(int i = 0; i < n; i++) { if(arr1[i] != arr2[i]) { return i; } } return n; }
+void reverseStr(std::string &str) { for(int i = 0, j = str.length() - 1; i < j; i++, j--) std::swap(str[i], str[j]); }
+void rotate(int arr[], int n) { int x = arr[n-1]; for(int i = n-1; i > 0; --i) arr[i] = arr[i-1]; arr[0] = x; }
+int findS(int s) { int _sum = 0, n = 1; while (_sum < s) { _sum += n * n * n; n++; } n--; return (_sum == s) ? n : -1; }
+bool isPowerOfFour(int n) { if (n == 0) return false; while (n != 1) { if (n % 4 != 0) return false; n /= 4; } return true; }
+int answer_query(const std::vector<int>& a, int n, int l, int r) { int count = 0; for (int i = l; i < r; ++i) { if (a[i] == a[i + 1]) { count++; } } return count; }
+int findFrequency(int arr[], int n, int left, int right, int element) { int count = 0; for (int i = left - 1; i < right; ++i) { if (arr[i] == element) count++; } return count; }
+void query(const std::string& s, int i, int j) { int n = s.length(); i %= n; j %= n; std::cout << (s[i] == s[j] ? "Yes" : "No") << std::endl; }
+int smallest(int x, int y, int z) { return y ? ((y % x) ? (y % z ? z : y) : x) : ((x % z) ? z : x); }
+bool check(const vector<int>& degree, int n) { return accumulate(degree.begin(), degree.end(), 0) == 2 * (n - 1); }
+bool isPalindrome(const std::string& str) { int l = 0, h = str.length() - 1; while (h > l) { if (str[l++] != str[h--]) return false; } return true; }
+#include <iostream> void printSquares(int n) { int square = 0, odd = 1; for(int x = 0; x < n; ++x) { std::cout << square << " ▁ "; square += odd; odd += 2; } }
+int minSum(int n) { int sum = 0; while (n > 0) { sum += (n % 10); n /= 10; } return sum == 1 ? 10 : sum; }
+bool isOneFlip(const std::string& str) { int sum = 0; for(char c : str) sum += c - '0'; return (sum == str.size() - 1 || sum == 1); }
+bool squareRootExists(int n, int p) { n = n % p; for (int x = 2; x < p; ++x) { if ((x * x) % p == n) return true; } return false; }
+int count(int n, int x) { int cnt = 0; for (int i = 1; i <= n; ++i) if (i <= x && x / i <= n && x % i == 0) cnt++; return cnt; }
+int binomialCoeff(int n, int k) { if (k == 0 || k == n) return 1; return binomialCoeff(n - 1, k - 1) + binomialCoeff(n - 1, k); }
+void swapDiagonal(vector<vector<int>>& matrix) { for(int i = 0; i < matrix.size(); ++i) std::swap(matrix[i][i], matrix[i][matrix.size() - i - 1]); }
+double arcLength(double diameter, double angle) { if (angle >= 360) { std::cout << "Angle cannot be formed"; return 0; } else { return 3.142857142857143 * diameter * (angle / 360.0); } }
+int breakSum(int n) { if (n == 0 || n == 1) return n; return std::max(breakSum(n / 2) + breakSum(n / 3) + breakSum(n / 4), n); }
+bool isDivBy9(int n) { if (n == 0 || n == 9) return true; if (n < 9) return false; return isDivBy9((n >> 3) - (n & 7)); }
+bool isDivisible(const std::string& str, int k) { int n = str.length(), c = 0; for (int i = 0; i < k; i++) if (str[n - i - 1] == '0') c++; return c == k; }
+int findSum(int n) { n -= 1; int sum = 0; sum += n * (n + 1) / 2; sum += n * (n + 1) * (2 * n + 1) / 6; return sum; }
+int findNth(int n) { int nthElement = 19 + (n - 1) * 9; int outliersCount = log10(nthElement) - 1; nthElement += 9 * outliersCount; return nthElement; }
+std::string decimalToBinary(int N) { std::string B_Number = ""; while (N != 0) { B_Number = std::to_string(N % 2) + B_Number; N /= 2; } return B_Number; }
+char first(const std::string& str, int i) { if (str[i] == '\0') return 0; if (isupper(str[i])) return str[i]; return first(str, i + 1); }
+std::string lexSmallest(std::vector<std::string>& a, int n) { std::sort(a.begin(), a.end(), std::greater<std::string>()); std::string answer; for (int i = 0; i < n; ++i) answer += a[i]; return answer; }
+int countSubStr(const std::string& st, int n) { int m = 0; for (int i = 0; i < n; ++i) { if (st[i] == '1') m++; } return m * (m - 1) / 2; }
+int remainder(const std::string& st) { int ln = st.length(), rem = 0; for (int i = 0; i < ln; ++i) { int num = rem * 10 + (st[i] - '0'); rem = num % 11; } return rem; }
+int findRotations(const std::string& str) { std::string tmp = str + str; int n = str.length(); for (int i = 1; i <= n; ++i) { if (str == tmp.substr(i, n)) return i; } return n; }
+void randomize(int arr[], int n) { for (int i = n - 1; i > 0; i--) { int j = rand() % (i + 1); swap(arr[i], arr[j]); } }
+int gcd(int a, int b) { if (a < b) return gcd(b, a); if (b == 0) return a; else return gcd(b, a % b); }
+int countNonDecreasing(int n) { int N = 10; long long count = 1; for(int i = 1; i <= n; ++i) { count = count * (N + i - 1) / i; } return count; }
+int countRect(int n) { int ans = 0; for (int length = 1; length <= sqrt(n); ++length) { int height = length; while (height * length <= n) { ans++; height++; } } return ans; }
+bool canMakeAllSame(const std::string& str) { int zeros = 0, ones = 0; for (char ch : str) { if (ch == '0') zeros++; else ones++; } return zeros == 1 || ones == 1; }
+int fib(int n, std::vector<int>& lookup) { if (n == 0 || n == 1) lookup[n] = n; if (lookup[n] == -1) lookup[n] = fib(n - 1, lookup) + fib(n - 2, lookup); return lookup[n]; }
+int selectRandom(int x) { static int res = 0; static int count = 0; count++; if (count == 1) res = x; else { int i = rand() % count; if (i == count - 1) res = x; } return res; }
+void transpose(vector<vector<int>>& A) { for (int i = 0; i < A.size(); ++i) for (int j = i + 1; j < A[i].size(); ++j) swap(A[i][j], A[j][i]); }
+#include <iostream> void printSquares(int n) { int square = 0, prev_x = 0; for (int x = 0; x < n; ++x) { square += (x + prev_x); std::cout << square << " ▁ "; prev_x = x; } }
+int firstFactorialDivisibleNumber(int x) { int i = 1, fact = 1; for (i = 1; i < x; ++i) { fact *= i; if (fact % x == 0) break; } return i; }
+int getInvCount(int arr[], int n) { int inv_count = 0; for(int i = 0; i < n; i++) { for(int j = i + 1; j < n; j++) { if(arr[i] > arr[j]) { inv_count++; } } } return inv_count; }
+int countPairs(int arr[], int n) { int ans = 0; for(int i = 0; i < n; i++) { for(int j = i + 1; j < n; j++) { if(arr[i] == arr[j]) { ans++; } } } return ans; }
+void recursiveReverse(std::string &str, int i = 0) { int n = str.length(); if (i == n / 2) return; std::swap(str[i], str[n - i - 1]); recursiveReverse(str, i + 1); }
+int countInRange(int arr[], int n, int x, int y) { int count = 0; for(int i = 0; i < n; i++) { if (arr[i] >= x && arr[i] <= y) count++; } return count; }
+bool isOverflow(long long a, long long b) { if (a == 0 || b == 0) return false; long long result = a * b; if (result >= 9223372036854775807 || result <= -9223372036854775808) result = 0; if (a == (result / b)) { std::cout << result / b << std::endl; return false; } else return true; }
+bool checkcircle(int r, int R, int r1, int x1, int y1) { int dis = sqrt(x1 * x1 + y1 * y1); return (dis - r1 >= R && dis + r1 <= r); }
+int octalToDecimal(int num) { int dec_value = 0, base = 1; while (num) { int last_digit = num % 10; num /= 10; dec_value += last_digit * base; base *= 8; } return dec_value; }
+bool isSymmetric(int mat[][N], int N) { for(int i = 0; i < N; ++i) { for(int j = 0; j < N; ++j) { if (mat[i][j] != mat[j][i]) { return false; } } } return true; }
+void shuffle(vector<int>& card, int n) { for (int i = 0; i < n; ++i) { int r = i + (rand() % (52 - i)); int tmp = card[i]; card[i] = card[r]; card[r] = tmp; } }
+double minRevolutions(double r, double x1, double y1, double x2, double y2) { double d = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2)); return ceil(d / (2 * r)); }
+int countCommon(vector<vector<int>>& mat, int n) { int res = 0; for(int i = 0; i < n; ++i) { if(mat[i][i] == mat[i][n-i-1]) res++; } return res; }
+bool isPrime(int n, int i = 2) { if (n <= 2) return (n == 2) ? true : false; if (n % i == 0) return false; if (i * i > n) return true; return isPrime(n, i + 1); }
+int maxProd(int n) { if (n == 2 || n == 3) return n - 1; int res = 1; while (n > 4) { n -= 3; res *= 3; } return n * res; }
+int minTime(vector<int> arr, int n, int m) { int t = 0; while (true) { int items = 0; for (int i = 0; i < n; ++i) items += t / arr[i]; if (items >= m) return t; ++t; } }
+bool isPossibleTriangle(vector<int>& arr, int N) { if (N < 3) return false; sort(arr.begin(), arr.end()); for (int i = 0; i < N - 2; ++i) { if (arr[i] + arr[i + 1] > arr[i + 2]) return true; } return false; }
+int middleOfThree(int a, int b, int c) { int x = a - b; int y = b - c; int z = a - c; if (x * y > 0) return b; else if (x * z > 0) return c; else return a; }
+int findRepeating(int arr[], int n) { std::unordered_set<int> s; for(int i = 0; i < n; ++i) { if(s.find(arr[i]) != s.end()) return arr[i]; s.insert(arr[i]); } return -1; }
+double maxArea(double a, double b, double c, double d) { double semiperimeter = (a + b + c + d) / 2; return sqrt((semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c) * (semiperimeter - d)); }
+int findDigits(int n) { if (n < 0) return 0; if (n <= 1) return 1; double digits = 0; for (int i = 2; i <= n; i++) digits += log10(i); return floor(digits) + 1; }
+bool isInorder(int arr[], int n) { if (n == 0 || n == 1) return true; for (int i = 1; i < n; i++) { if (arr[i - 1] > arr[i]) return false; } return true; }
+bool isMajority(vector<int>& a) { unordered_map<int, int> mp; for(int num : a) mp[num]++; for(auto& p : mp) if(p.second >= a.size() / 2) return true; return false; }
+int findStep(int n) { if (n == 1 || n == 0) return 1; else if (n == 2) return 2; else return findStep(n-3) + findStep(n-2) + findStep(n-1); }
+int findPosition(int k, int n) { int f1 = 0, f2 = 1, i = 2; while (true) { int f3 = f1 + f2; f1 = f2; f2 = f3; if (f2 % k == 0) return n * i; i++; } return 0; }
+int minimum_cost(vector<int>& a, int n) { int mn = INT_MAX, sum = 0; for(int i = 0; i < n; ++i) { mn = min(a[i], mn); sum += a[i]; } return mn * (sum - mn); }
+int kthdigit(int a, int b, int k) { int p = pow(a, b); int count = 0; while (p > 0 && count < k) { int rem = p % 10; count++; if (count == k) { return rem; } p /= 10; } return -1; }
+int numberOfWays(int x) { if (x == 0 || x == 1) return 1; else return numberOfWays(x - 1) + (x - 1) * numberOfWays(x - 2); }
+int sumNodes(int l) { int leafNodeCount = pow(2, l - 1); int sumLastLevel = (leafNodeCount * (leafNodeCount + 1)) / 2; int sum = sumLastLevel * l; return sum; }
+int leonardo(int n) { vector<int> dp {1, 1}; for(int i = 2; i <= n; ++i) dp.push_back(dp[i-1] + dp[i-2] + 1); return dp[n]; }
+void add(int A[][N], int B[][N], int C[][N], int N) { for (int i = 0; i < N; i++) { for (int j = 0; j < N; j++) { C[i][j] = A[i][j] + B[i][j]; } } }
+bool arraySortedOrNot(int arr[], int n) { if (n == 0 || n == 1) return true; for (int i = 1; i < n; i++) { if (arr[i - 1] > arr[i]) return false; } return true; }
+int findSum(int n) { int multiTerms = n * (n + 1) / 2, sm = multiTerms; for (int i = 2; i <= n; ++i) { multiTerms -= (i - 1); sm += multiTerms * i; } return sm; }
+bool isCornerPresent(const std::string& str, const std::string& corner) { int n = str.length(), cl = corner.length(); if (n < cl) return false; return (str.substr(0, cl) == corner && str.substr(n - cl, cl) == corner); }
+bool isDiagonalMatrix(vector<vector<int>>& mat) { for (int i = 0; i < N; ++i) { for (int j = 0; j < N; ++j) { if (i != j && mat[i][j] != 0) return false; } } return true; }
+int minimumflip(vector<vector<int>>& mat, int n) { int flip = 0; for (int i = 0; i < n; ++i) { for (int j = 0; j < i; ++j) { if (mat[i][j] != mat[j][i]) { flip++; } } } return flip; }
+int findIndex(int n) { if (n <= 1) return n; int a = 0, b = 1, c = 1, res = 1; while (c < n) { c = a + b; res++; a = b; b = c; } return res; }
+void constructArr(int arr[], int pair[], int n) { arr[0] = (pair[0] + pair[1] - pair[n-1]) / 2; for(int i = 1; i < n; i++) { arr[i] = pair[i-1] - arr[0]; } }
+bool checkMarkov(const std::vector<std::vector<double>>& m) { for (auto& row : m) { double sum = std::accumulate(row.begin(), row.end(), 0.0); if (sum != 1) return false; } return true; }
+int findMod(int a, int b) { if (a < 0) a = -a; if (b < 0) b = -b; int mod = a; while (mod >= b) mod -= b; return (a < 0) ? -mod : mod; }
+void recursiveReverse(std::string &str) { std::stack<char> stack; for (char ch : str) stack.push(ch); for (int i = 0; i < str.size(); ++i) { str[i] = stack.top(); stack.pop(); } }
+void multiply(int A[][N], int B[][N], int C[][N], int N) { for (int i = 0; i < N; i++) { for (int j = 0; j < N; j++) { C[i][j] = A[i][j] - B[i][j]; } } }
+int minValue(std::vector<int>& A, std::vector<int>& B, int n) { std::sort(A.begin(), A.end()); std::sort(B.begin(), B.end()); int result = 0; for (int i = 0; i < n; ++i) result += A[i] * B[n - i - 1]; return result; }
+std::string decToBin(int n) { if (n == 0) return "0"; std::string bin = ""; while (n > 0) { bin = (n & 1 ? '1' : '0') + bin; n >>= 1; } return bin; }
+void rotateMatrix(vector<vector<int>>& mat) { for (int i = N-1; i >= 0; i--) { for (int j = N-1; j >= 0; j--) cout << mat[i][j] << " "; cout << "\n"; } }
+int russianPeasant(int a, int b) { int res = 0; while (b > 0) { if (b & 1) res += a; a <<= 1; b >>= 1; } return res; }
+void splitArr(vector<int>& arr, int n, int k) { for(int i = 0; i < k; i++) { int x = arr[0]; for(int j = 0; j < n - 1; j++) { arr[j] = arr[j + 1]; } arr[n - 1] = x; } }
+int CountPairs(int n) { int k = n; int imin = 1; int ans = 0; while (imin <= n) { int imax = n / k; ans += k * (imax - imin + 1); imin = imax + 1; k = n / imin; } return ans; }
+int lastPosition(int n, int m, int k) { if (m <= n - k + 1) return m + k - 1; m = m - (n - k + 1); if (m % n == 0) return n; else return m % n; }
+int minimumSquare(int a, int b) { int result = 0; int rem = 0; if (a < b) { int temp = a; a = b; b = temp; } while (b > 0) { result += a / b; rem = a % b; a = b; b = rem; } return result; }
+void printFibonacciNumbers(int n) { int f1 = 0, f2 = 1; if (n < 1) return; for (int x = 0; x < n; x++) { std::cout << f2 << " "; int next = f1 + f2; f1 = f2; f2 = next; } }
+std::string minLexRotation(const std::string& str) { int n = str.size(); std::vector<std::string> arr(n); for (int i = 0; i < n; ++i) arr[i] = str.substr(i) + str.substr(0, i); sort(arr.begin(), arr.end()); return arr[0]; }
+int search(int arr[], int n, int x) { for(int i = 0; i < n; i += abs(arr[i] - x)) if(arr[i] == x) return i; return -1; }
+int findHeight(vector<int>& parent, int n) { int res = 0; for (int i = 0; i < n; ++i) { int p = i; int current = 1; while (parent[p] != -1) { current += 1; p = parent[p]; } res = max(res, current); } return res; }
+int maxPrefix(const std::string& s, const std::string& t) { int count = 0; for (int i = 0; i < t.length(); ++i) { if (count == s.length()) break; if (t[i] == s[count]) count++; } return count; }
+int findMaximum(int arr[], int low, int high) { int max = arr[low]; for(int i = low; i <= high; ++i) { if(arr[i] > max) { max = arr[i]; } } return max; }
+int findSum(const std::string& str1) { std::string temp = ""; int Sum = 0; for (char ch : str1) { if (isdigit(ch)) temp += ch; else { Sum += std::stoi(temp); temp = "0"; } } return Sum + std::stoi(temp); }
+void mirrorImage(double a, double b, double c, double x1, double y1, double& x, double& y) { double temp = -2 * (a * x1 + b * y1 + c) / (a * a + b * b); x = temp * a + x1; y = temp * b + y1; }
+int moduloMultiplication(int a, int b, int mod) { int res = 0; a = a % mod; while (b) { if (b & 1) res = (res + a) % mod; a = (2 * a) % mod; b >>= 1; } return res; }
+int subset(std::vector<int>& arr, int n) { std::map<int, int> mp; for (int i = 0; i < 10; ++i) mp[i] = 0; for (int i = 0; i < n; ++i) mp[arr[i]]++; int res = 0; for (auto& p : mp) res = std::max(res, p.second); return res; }
+int findMinDiff(vector<int>& arr, int n) { sort(arr.begin(), arr.end()); int diff = INT_MAX; for (int i = 0; i < n - 1; ++i) { if (arr[i + 1] - arr[i] < diff) diff = arr[i + 1] - arr[i]; } return diff; }
+int CountSquares(int a, int b) { int cnt = 0; for (int i = a; i <= b; ++i) { for (int j = 1; j * j <= i; ++j) { if (j * j == i) { cnt++; } } } return cnt; }
+int count_of_ways(int n) { int count = 0; for (int i = 0; i <= n; i++) { for (int j = 0; j <= n; j++) { for (int k = 0; k <= n; k++) { if (i + j + k == n) { count++; } } } } return count; }
+int countFriendsPairings(int n) { int a = 1, b = 2, c = 0; if (n <= 2) return n; for (int i = 3; i <= n; i++) { c = b + (i - 1) * a; a = b; b = c; } return c; }
+int exponentiation(int bas, int exp) { int t = 1; while (exp > 0) { if (exp % 2 != 0) t = (t * bas) % N; bas = (bas * bas) % N; exp = exp / 2; } return t % N; }
+int countSolutions(int n) { int res = 0; for(int x = 0; x * x < n; ++x) for(int y = 0; (x * x) + (y * y) < n; ++y) ++res; return res; }
+void maximizecube(int l, int b, int h) { int side = std::gcd(l, std::gcd(b, h)); int num = l / side; num *= b / side; num *= h / side; std::cout << side << " " << num << std::endl; }
+int minXOR(vector<int> arr, int n) { sort(arr.begin(), arr.end()); int min_xor = 999999; for(int i = 0; i < n - 1; ++i) { for(int j = i + 1; j < n; ++j) { int val = arr[i] ^ arr[j]; min_xor = min(min_xor, val); } } return min_xor; }
+int maxProduct(vector<int>& arr, int n) { if (n < 3) return -1; sort(arr.begin(), arr.end()); return max(arr[0] * arr[1] * arr[n - 1], arr[n - 1] * arr[n - 2] * arr[n - 3]); }
+bool isDivisibleBy7(int num) { if (num < 0) return isDivisibleBy7(-num); if (num == 0 || num == 7) return true; if (num < 10) return false; return isDivisibleBy7(num / 10 - 2 * (num % 10)); }
+int eulerian(int n, int m) { if (m >= n || n == 0) return 0; if (m == 0) return 1; return ((n - m) * eulerian(n - 1, m - 1) + (m + 1) * eulerian(n - 1, m)); }
+int recSearch(int arr[], int l, int r, int x) { if (r < l) return -1; if (arr[l] == x) return l; if (arr[r] == x) return r; return recSearch(arr, l + 1, r - 1, x); }
+int numofsubset(vector<int>& arr, int n) { sort(arr.begin(), arr.end()); int count = 1; for(int i = 0; i < n - 1; i++) { if(arr[i] + 1 != arr[i + 1]) count++; } return count; }
+int binaryToDecimal(std::string n) { int dec_value = 0; int base1 = 1; int len1 = n.length(); for (int i = len1 - 1; i >= 0; i--) { if (n[i] == '1') { dec_value += base1; } base1 = base1 * 2; } return dec_value; }
+int countSubstringWithEqualEnds(const std::string &s) { int result = 0, n = s.length(); for (int i = 0; i < n; i++) for (int j = i; j < n; j++) if (s[i] == s[j]) result++; return result; }
+int binarySearch(int arr[], int l, int r, int x) { while (l <= r) { int mid = l + (r - l) / 2; if (arr[mid] == x) return mid; else if (arr[mid] < x) l = mid + 1; else r = mid - 1; } return -1; }
+void decToBinary(int n) { std::vector<int> binaryNum(32); int i = 0; while (n > 0) { binaryNum[i] = n % 2; n = n / 2; i++; } for (int j = i - 1; j >= 0; j--) std::cout << binaryNum[j] << " "; }
+long long mulmod(long long a, long long b, long long mod) { long long res = 0; a = a % mod; while (b > 0) { if (b % 2 == 1) res = (res + a) % mod; a = (a * 2) % mod; b /= 2; } return res % mod; }
+int firstNonRepeating(int arr[], int n) { unordered_map<int, int> mp; for (int i = 0; i < n; ++i) mp[arr[i]]++; for (int i = 0; i < n; ++i) if (mp[arr[i]] == 1) return arr[i]; return -1; }
+int middleOfThree(int a, int b, int c) { if ((a < b && b < c) || (c < b && b < a)) return b; else if ((b < a && a < c) || (c < a && a < b)) return a; else return c; }
+int multiply(int x, int y) { if (y == 0) return 0; else if (y > 0) return x + multiply(x, y - 1); else return -multiply(x, -y); }
+void to_upper(std::string &string) { for (int i = 0; i < string.length(); i++) { if ('a' <= string[i] && string[i] <= 'z') string[i] = string[i] - 'a' + 'A'; } }
+int findMinSum(vector<int>& a, vector<int>& b, int n) { sort(a.begin(), a.end()); sort(b.begin(), b.end()); int sum = 0; for(int i = 0; i < n; i++) { sum += abs(a[i] - b[i]); } return sum; }
+#include <unordered_map> \n bool checkCount(int arr[], int n, int k) { \n std::unordered_map<int, int> mp; \n for(int i = 0; i < n; i++) mp[arr[i]]++; \n for(auto& p : mp) if(p.second > 2 * k) return false; \n return true; \n }
+int nonFibonacci(int n) { int prevPrev = 1, prev = 2, curr = 3; while (n > 0) { prevPrev = prev; prev = curr; curr = prevPrev + prev; n -= (curr - prev - 1); } return prev + n; }
+int minXOR(vector<int>& arr) { sort(arr.begin(), arr.end()); int minXor = INT_MAX; for(int i = 0; i < arr.size() - 1; ++i) { int val = arr[i] ^ arr[i + 1]; minXor = min(minXor, val); } return minXor; }
+bool isPowerOfFour(int n) { int count = 0; if (n && !(n & (n - 1))) { while (n > 1) { n >>= 1; count++; } if (count % 2 == 0) return true; else return false; } return false; }
+int firstNonRepeating(int arr[], int n) { for(int i=0; i<n; i++) { int j=0; while(j<n) { if(i != j && arr[i] == arr[j]) break; j++; } if(j == n) return arr[i]; } return -1; }
+int power(int x, int y, int p) { int res = 1; x = x % p; while (y > 0) { if (y & 1) res = (res * x) % p; y = y >> 1; x = (x * x) % p; } return res; }
+bool isPossible(std::vector<int>& a, std::vector<int>& b, int n, int k) { std::sort(a.rbegin(), a.rend()); std::sort(b.begin(), b.end()); for(int i = 0; i < n; ++i) { if(a[i] + b[i] < k) return false; } return true; }
+void printDistinct(int arr[], int n) { std::unordered_set<int> s; for (int i = 0; i < n; ++i) { if (!s.count(arr[i])) { s.insert(arr[i]); std::cout << arr[i] << " "; } } }
+int countSeq(int n) { int nCr = 1, res = 1; for(int r = 1; r <= n; r++) { nCr = nCr * (n + 1 - r) / r; res += nCr * nCr; } return res; }
+int countNegative(vector<vector<int>>& M, int n, int m) { int count = 0; for(int i = 0; i < n; ++i) { for(int j = 0; j < m; ++j) { if(M[i][j] < 0) count++; else break; } } return count; }
+bool isPrime(int p) { int checkNumber = (1 << p) - 1; int nextval = 4 % checkNumber; for (int i = 1; i < p - 1; ++i) { nextval = (nextval * nextval - 2) % checkNumber; } return nextval == 0; }
+#include <cmath> double minPerimeter(double n) { double l = std::sqrt(n); double sq = l * l; if (sq == n) { return l * 4; } else { double row = n / l; double perimeter = 2 * (l + row); if (static_cast<int>(n) % static_cast<int>(l) != 0) { perimeter += 2; } return perimeter; } }
+int sequence(int n) { std::vector<int> f = {0, 1, 1}; for (int i = 3; i <= n; ++i) { int r = f[f[i - 1]] + f[i - f[i - 1]]; f.push_back(r); } return f[n]; }
+int countIntegralSolutions(int n) { int result = 0; for (int i = 0; i <= n; ++i) { for (int j = 0; j <= n; ++j) { for (int k = 0; k <= n; ++k) { if (i + j + k == n) { result++; } } } } return result; }
+int maxGameByWinner(int N) { vector<int> dp(N); dp[0] = 1; dp[1] = 2; int i = 1; while (dp[i] <= N) { i++; if (i < N) dp[i] = dp[i-1] + dp[i-2]; } return i - 1; }
+int numberOfPaths(int p, int q) { vector<int> dp(q, 1); for(int i = 0; i < p - 1; ++i) for(int j = 1; j < q; ++j) dp[j] += dp[j - 1]; return dp[q - 1]; }
+int minOperation(int arr[], int n) { std::unordered_map<int, int> Hash; for(int i = 0; i < n; ++i) { Hash[arr[i]]++; } int max_count = 0; for(auto& it : Hash) { if(max_count < it.second) { max_count = it.second; } } return n - max_count; }
+void bubbleSort(vector<int>& arr) { int n = arr.size(); for (int i = 0; i < n; ++i) { for (int j = 0; j < n - i - 1; ++j) { if (arr[j] > arr[j + 1]) { swap(arr[j], arr[j + 1]); } } } }
+void findCombinations(const std::string& s, int index, std::string out) { if(index == s.size()) { std::cout << out << std::endl; } for(int i = index; i < s.size(); i++) { findCombinations(s, i + 1, out + " ( " + s.substr(index, i - index + 1) + " ) "); } }
+int countDivisibles(int arr[], int n) { int res = 0; for(int i = 0; i < n; ++i) { for(int j = i+1; j < n; ++j) { if(arr[i] % arr[j] == 0 || arr[j] % arr[i] == 0) { res++; } } } return res; }
+int maxTasks(vector<int>& high, vector<int>& low, int n) { if (n <= 0) return 0; return max(high[n-1] + maxTasks(high, low, n-2), low[n-1] + maxTasks(high, low, n-1)); }
+void printDistinct(int arr[], int n) { for (int i = 0; i < n; i++) { bool found = false; for (int j = 0; j < i; j++) { if (arr[i] == arr[j]) { found = true; break; } } if (!found) { std::cout << arr[i] << " "; } } }
+void findElements(int arr[], int n) { for (int i = 0; i < n; ++i) { int count = 0; for (int j = 0; j < n; ++j) { if (arr[j] > arr[i]) { count++; } } if (count >= 2) { std::cout << arr[i] << " ▁ "; } } }
+int nearestSmallerEqFib(int n) { if (n == 0 || n == 1) return n; int f1 = 0, f2 = 1, f3 = 1; while (f3 <= n) { f1 = f2; f2 = f3; f3 = f1 + f2; } return f2; }
+int findMinDiff(vector<int>& arr, int n) { int diff = INT_MAX; for (int i = 0; i < n - 1; ++i) { for (int j = i + 1; j < n; ++j) { int currentDiff = abs(arr[i] - arr[j]); if (currentDiff < diff) { diff = currentDiff; } } } return diff; }
+void subArray(int arr[], int n) { for (int i = 0; i < n; ++i) { for (int j = i; j < n; ++j) { for (int k = i; k <= j; ++k) std::cout << arr[k] << " ▁ "; std::cout << "\n "; } } }
+int distancesum(vector<int>& x, vector<int>& y, int n) { int sum = 0; for(int i = 0; i < n; ++i) { for(int j = i + 1; j < n; ++j) { sum += (abs(x[i] - x[j]) + abs(y[i] - y[j])); } } return sum; }
+int CountWays(int n) { std::vector<int> table(n + 1, 0); table[0] = 1; for(int i = 1; i < n; ++i) { for(int j = i; j <= n; ++j) { table[j] += table[j - i]; } } return table[n]; }
+int maxSubarrayXOR(int arr[], int n) { int ans = INT_MIN; for (int i = 0; i < n; i++) { int curr_xor = 0; for (int j = i; j < n; j++) { curr_xor = curr_xor ^ arr[j]; ans = max(ans, curr_xor); } } return ans; }
+bool isIdentity(int** mat, int N) { for(int row = 0; row < N; ++row) { for(int col = 0; col < N; ++col) { if ((row == col && mat[row][col] != 1) || (row != col && mat[row][col] != 0)) return false; } } return true; }
+int insertSorted(int arr[], int n, int key, int capacity) { if (n >= capacity) return n; int i = n - 1; while (i >= 0 && arr[i] > key) { arr[i + 1] = arr[i]; i--; } arr[i + 1] = key; return (n + 1); }
+void solve(vector<int>& arr, int n) { sort(arr.begin(), arr.end()); int a = 0, b = 0; for (int i = 0; i < n; ++i) { if (i % 2 != 0) a = a * 10 + arr[i]; else b = b * 10 + arr[i]; } return a + b; }
+int findSum(vector<int>& A, vector<int>& B, int n) { unordered_map<int, int> Hash; for (int i = 0; i < n; ++i) { Hash[A[i]]++; Hash[B[i]]++; } int Sum = 0; for (auto& pair : Hash) { if (pair.second == 1) Sum += pair.first; } return Sum; }
+int maxLen(vector<int> arr) { int max_len = 0; for (int i = 0; i < arr.size(); i++) { int curr_sum = 0; for (int j = i; j < arr.size(); j++) { curr_sum += arr[j]; if (curr_sum == 0) { max_len = max(max_len, j - i + 1); } } } return max_len; }
+double minRadius(int k, const vector<int>& x, const vector<int>& y, int n) { vector<double> dis(n); for(int i = 0; i < n; ++i) dis[i] = x[i] * x[i] + y[i] * y[i]; sort(dis.begin(), dis.end()); return dis[k-1]; }
+void generate(int ones, int zeroes, string str, int len1) { if(len1 == str.length()) { cout << str << " ▁ "; return; } generate(ones + 1, zeroes, str + "1", len1); if(ones > zeroes) generate(ones, zeroes + 1, str + "0", len1); }
+int search(int arr[], int n, int x) { for(int i = 0; i < n; i += abs(arr[i] - x)) if(arr[i] == x) return i; std::cout << "number is not present!"; return -1; }
+int search(int arr[], int n, int x, int k) {for (int i = 0; i < n; i += max(1, abs(arr[i] - x) / k)) {if (arr[i] == x) return i;} cout << "number is not present!"; return -1;}
+int countPairsWithDiffK(int arr[], int n, int k) { int count = 0; for (int i = 0; i < n; i++) { for (int j = i + 1; j < n; j++) { if (abs(arr[i] - arr[j]) == k) count++; } } return count; }
+int countNegative(vector<vector<int>>& M, int n, int m) { int count = 0; int i = 0; int j = m - 1; while (j >= 0 && i < n) { if (M[i][j] < 0) { count += (j + 1); i++; } else { j--; } } return count; }
+int findMinX(vector<int>& num, vector<int>& rem, int k) { int x = 1; while (true) { int j = 0; while (j < k) { if (x % num[j] != rem[j]) break; j++; } if (j == k) return x; x++; } }
+void removeDuplicates(vector<char>& S) { int n = S.size(); if (n < 2) return; int j = 0; for (int i = 0; i < n; ++i) { if (S[j] != S[i]) { j++; S[j] = S[i]; } } S.resize(j + 1); }
+void distributingBalls(int k, int n, const string& s, int MAX_CHAR) { vector<int> a(MAX_CHAR, 0); for(int i = 0; i < n; ++i) a[s[i] - 'a']++; for(int i = 0; i < MAX_CHAR; ++i) if(a[i] > k) return false; return true; }
+void insertionSortRecursive(vector<int>& arr, int n) { if (n <= 1) return; insertionSortRecursive(arr, n-1); int last = arr[n-1]; int j = n-2; while (j >= 0 && arr[j] > last) { arr[j+1] = arr[j]; j--; } arr[j+1] = last; }
+bool areEqual(vector<int>& arr1, vector<int>& arr2) { if (arr1.size() != arr2.size()) return false; sort(arr1.begin(), arr1.end()); sort(arr2.begin(), arr2.end()); for (int i = 0; i < arr1.size(); ++i) { if (arr1[i] != arr2[i]) return false; } return true; }
+int getOddOccurrence(int arr[], int arr_size) { for (int i = 0; i < arr_size; i++) { int count = 0; for (int j = 0; j < arr_size; j++) { if (arr[i] == arr[j]) count++; } if (count % 2 != 0) return arr[i]; } return -1; }
+bool checkIsAP(vector<int>& arr, int n) { if (n == 1) return true; sort(arr.begin(), arr.end()); int d = arr[1] - arr[0]; for (int i = 2; i < n; ++i) { if (arr[i] - arr[i-1] != d) return false; } return true; }
+int minOps(vector<int>& arr, int n, int k) { int max1 = *max_element(arr.begin(), arr.end()); int res = 0; for(int i = 0; i < n; ++i) { if ((max1 - arr[i]) % k != 0) return -1; else res += (max1 - arr[i]) / k; } return res; }
